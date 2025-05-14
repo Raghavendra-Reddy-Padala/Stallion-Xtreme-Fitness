@@ -17,16 +17,16 @@ export default function Footer() {
           </p>
 
           <div className="flex space-x-4">
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition">
+            <Link href="https://www.facebook.com/p/Stallion-Xtreme-Fitness-100084922102459/" className="text-white hover:text-[#e71b4b] transition">
               <Facebook className="h-5 w-5 md:h-6 md:w-6" />
             </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition">
+            <Link href="https://www.instagram.com/stallion_xtremefitness?igsh=ZTNkZGZyN2FlZWlt" className="text-white hover:text-[#e71b4b] transition">
               <Instagram className="h-5 w-5 md:h-6 md:w-6" />
             </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition">
+            {/* <Link href="#" className="text-white hover:text-[#e71b4b] transition">
               <Twitter className="h-5 w-5 md:h-6 md:w-6" />
-            </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition">
+            </Link> */}
+            <Link href="https://youtube.com/@stallionxtremefitness?si=qZgnUTp4IHMprTuo" className="text-white hover:text-[#e71b4b] transition">
               <Youtube className="h-5 w-5 md:h-6 md:w-6" />
             </Link>
           </div>
@@ -100,16 +100,16 @@ export default function Footer() {
         <div>
           <h3 className="text-lg md:text-xl font-bold mb-4 text-white">Contact</h3>
           <address className="not-italic text-sm md:text-base">
-            <p className="mb-2 text-gray-300">123 Iron Street, Fitness District</p>
-            <p className="mb-2 text-gray-300">City, State 12345</p>
+            <p className="mb-2 text-gray-300">3rd Floor, above Sri Vidya Junior College, Chinthal,Hyderabad</p>
+            <p className="mb-2 text-gray-300">Telangana 500037</p>
             <p className="mb-2">
               <Link href="tel:+123456789" className="text-gray-300 hover:text-[#e71b4b] transition">
-                +1 (234) 567-890
+                +91 8885110136
               </Link>
             </p>
             <p>
               <Link href="mailto:info@stallion.com" className="text-gray-300 hover:text-[#e71b4b] transition">
-                info@stallion.com
+                support@stallionxtremefitness.com
               </Link>
             </p>
           </address>
@@ -127,9 +127,7 @@ export default function Footer() {
             <Link href="#" className="text-gray-400 hover:text-[#e71b4b] transition text-xs md:text-sm">
               Terms of Service
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-[#e71b4b] transition text-xs md:text-sm">
-              Cookie Policy
-            </Link>
+            
           </div>
         </div>
       </div>
