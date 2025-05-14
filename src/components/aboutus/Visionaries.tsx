@@ -41,8 +41,8 @@ export default function VisionariesSection() {
           <ScrollAnimation delay={0.4}>
             <div className="relative w-full aspect-[4/3] md:aspect-[638/467] mx-auto">
               <Image
-                src="/images/aboutus/abhi.png"
-                alt="Abhilash - IFBB Pro Founder"
+                src="/images/aboutus/abhi.JPG"
+                alt="Abhilash - Stallion xtreme Fitness Founder"
                 fill
                 className="object-cover"
               />
@@ -55,8 +55,8 @@ export default function VisionariesSection() {
           <ScrollAnimation delay={0.2} className="order-2 md:order-1">
             <div className="relative w-full aspect-[4/3] md:aspect-[638/467] mx-auto">
               <Image
-                src="/images/aboutus/suresh.png"
-                alt="Suresh - IFBB Pro Founder"
+                src="/images/aboutus/suresh.JPG"
+                alt="Suresh - Stallion Xtreme Fitness Founder"
                 fill
                 className="object-cover"
               />
