@@ -32,9 +32,9 @@ export default function VisionariesSection() {
                 the market – facilities that prioritized real results over luxury amenities.
               </p>
   
-              <blockquote className="italic text-gray-300 border-l-4 border-[#e71b4b] pl-4 mb-4 md:mb-6 text-lg ">
+              {/* <blockquote className="italic text-gray-300 border-l-4 border-[#e71b4b] pl-4 mb-4 md:mb-6 text-lg ">
                 &ldquo;A gym should be judged by the transformations it creates, not the chai it serves.&rdquo;
-              </blockquote>
+              </blockquote> */}
             </div>
           </ScrollAnimation>
           
@@ -76,9 +76,9 @@ export default function VisionariesSection() {
                 the market – facilities that prioritized real results over luxury amenities.
               </p>
   
-              <blockquote className="italic text-gray-300 border-l-4 border-[#e71b4b] pl-4 mb-4 md:mb-6 text-lg">
+              {/* <blockquote className="italic text-gray-300 border-l-4 border-[#e71b4b] pl-4 mb-4 md:mb-6 text-lg">
                 &ldquo;A gym should be judged by the transformations it creates, not the chai it serves.&rdquo;
-              </blockquote>
+              </blockquote> */}
             </div>
           </ScrollAnimation>
         </div>
