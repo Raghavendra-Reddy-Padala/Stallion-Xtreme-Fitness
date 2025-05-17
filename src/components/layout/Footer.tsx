@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Logo and Social Media */}
         <div className="md:col-span-1">
           <div className="mb-6">
-            <Image src="/images/hero/logo.png" alt="Stallion Fitness" width={150} height={40} />
+            <Image src="/images/hero/stallion.png" alt="Stallion Fitness" width={150} height={40} />
           </div>
 
           <p className="text-sm md:text-base text-gray-300 mb-6">

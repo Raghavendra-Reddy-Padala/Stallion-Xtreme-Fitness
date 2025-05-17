@@ -1,50 +1,69 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Logo from "../ui/Logo"
 import { Menu, X, Phone, ArrowRight } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const menuRef = useRef(null)
   
-  // Handle scroll effect for header and auto-close menu
+  // Handle scroll effect for header
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
-      
-      // Close mobile menu if it's open when user scrolls
-      if (mobileMenuOpen) {
-        setMobileMenuOpen(false)
-      }
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [mobileMenuOpen])
+  }, [])
 
-  // Add touch move event to close menu when swiping
+  // Close menu function
+  const closeMenu = () => {
+    setMobileMenuOpen(false)
+    document.body.style.overflow = '' // Restore scrolling
+  }
+
+  // Handle click outside to close menu
   useEffect(() => {
     if (!mobileMenuOpen) return;
     
-    const handleTouchMove = () => {
-      // Close the menu when user swipes (touchmove event)
-      setMobileMenuOpen(false);
+    const handleClickOutside = (event) => {
+      // Check if the click is on the menu content or on the backdrop
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu();
+      }
     };
     
-    // Add event listener for touch devices
-    document.addEventListener('touchmove', handleTouchMove);
+    // Add event listener for outside clicks
+    document.addEventListener('mousedown', handleClickOutside);
     
     // Cleanup
     return () => {
-      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [mobileMenuOpen]);
 
+  // Toggle mobile menu and manage body scroll lock
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen)
+    
+    // Toggle body scroll lock
+    if (!mobileMenuOpen) {
+      document.body.style.overflow = 'hidden' // Lock scrolling when menu is open
+    } else {
+      document.body.style.overflow = '' // Restore scrolling when menu is closed
+    }
   }
+
+  // Make sure to unlock body scroll when component unmounts
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [])
 
   // Animation variants
   const menuItemVariants = {
@@ -53,65 +72,81 @@ export default function Header() {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-sm" : ""}`}>
-      <div className="mx-auto px-4 md:px-8">
-        <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Logo />
+    <>
+      <header className={`fixed top-0 left-0 right-0 z-40 py-4 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-sm" : ""}`}>
+        <div className="mx-auto px-4 md:px-8">
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <Logo />
 
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-white focus:outline-none relative z-50"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle Menu"
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 text-white">
-            <Link href="/" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
-              Home
-            </Link>
-            <Link href="/about-us" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
-              About Us
-            </Link>
-            <Link href="/events" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
-              Events
-            </Link>
-            <Link href="/branches" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
-              Branches
-            </Link>
-            <Link href="/stallions" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
-              Stallion Classic
-            </Link>
-          </nav>
-
-          {/* Contact Button - Desktop Only */}
-          <div className="hidden md:block">
-            <Link
-              href="/contact"
-              className="bg-[#e71b4b] text-white px-4 py-2 hover:bg-opacity-90 transition md:text-base"
+            {/* Mobile Menu Button */}
+            <button 
+              className="md:hidden text-white focus:outline-none relative z-50"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle Menu"
             >
-              Contact Us
-            </Link>
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-6 text-white">
+              <Link href="/" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
+                Home
+              </Link>
+              <Link href="/about-us" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
+                About Us
+              </Link>
+              <Link href="/events" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
+                Events
+              </Link>
+              <Link href="/branches" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
+                Branches
+              </Link>
+              <Link href="/stallions" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]">
+                Stallion Classic
+              </Link>
+            </nav>
+
+            {/* Contact Button - Desktop Only */}
+            <div className="hidden md:block">
+              <Link
+                href="/contact"
+                className="bg-[#e71b4b] text-white px-4 py-2 hover:bg-opacity-90 transition md:text-base"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
+      </header>
 
-        {/* Mobile Menu */}
+      {/* Mobile Menu - Completely separate from header */}
+      <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            className="md:hidden fixed inset-0 top-0 z-40 bg-black/95 overflow-auto"
+            className="fixed inset-0 z-50 bg-black/95 overflow-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="flex flex-col items-center justify-center min-h-screen py-16">
+            {/* Close button (X) outside of the menu content */}
+            <button 
+              className="absolute top-4 right-4 text-white focus:outline-none z-50"
+              onClick={closeMenu}
+              aria-label="Close Menu"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            
+            <div 
+              ref={menuRef}
+              className="flex flex-col items-center justify-center min-h-screen py-16"
+            >
               {/* Logo in Mobile Menu */}
               <div className="mb-8">
                 <Logo />
@@ -133,7 +168,7 @@ export default function Header() {
                   <Link 
                     href="/" 
                     className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     Home
                   </Link>
@@ -143,7 +178,7 @@ export default function Header() {
                   <Link 
                     href="/about-us" 
                     className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     About Us
                   </Link>
@@ -153,7 +188,7 @@ export default function Header() {
                   <Link 
                     href="/events" 
                     className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     Events
                   </Link>
@@ -163,7 +198,7 @@ export default function Header() {
                   <Link 
                     href="/branches" 
                     className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     Branches
                   </Link>
@@ -173,7 +208,7 @@ export default function Header() {
                   <Link 
                     href="/stallions" 
                     className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     Stallion Classic
                   </Link>
@@ -186,7 +221,7 @@ export default function Header() {
                   <Link
                     href="/contact"
                     className="bg-[#e71b4b] text-white px-8 py-3 flex items-center justify-center hover:bg-opacity-90 transition text-base font-[modernist] w-64"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     Contact Us <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -194,7 +229,7 @@ export default function Header() {
                   <Link
                     href="tel:+123456789"
                     className="border border-white text-white px-8 py-3 flex items-center justify-center hover:bg-white/10 transition text-base w-64"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                   >
                     <Phone className="mr-2 h-4 w-4" /> Call Us
                   </Link>
@@ -234,7 +269,7 @@ export default function Header() {
             </div>
           </motion.div>
         )}
-      </div>
-    </header>
+      </AnimatePresence>
+    </>
   )
 }
