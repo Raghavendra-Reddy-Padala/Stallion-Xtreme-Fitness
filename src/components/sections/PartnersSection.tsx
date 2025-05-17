@@ -57,7 +57,7 @@ export default function PartnersSection() {
     { name: "Navayug", logo: "/svg/navayug.PNG" },
     { name: "LifeSpan", logo: "/svg/lifespan.PNG" },
     { name: "TechMocha", logo: "/svg/techmocha.png" },
-    { name: "SSWS", logo: "/svg/ssws.png" },
+    { name: "cnes", logo: "/svg/cnes.jpg" },
   ];
 
   // Create multiple duplications for truly seamless infinite scrolling
@@ -85,7 +85,7 @@ export default function PartnersSection() {
             {displayPartners.map((partner, i) => (
               <motion.div
                 key={i}
-   className="py-6 md:py-8 flex items-center justify-center min-w-[160px] md:min-w-[200px] w-[240px] md:w-[300px] px-6 md:px-8"
+                className="py-6 md:py-8 flex items-center justify-center min-w-[160px] md:min-w-[200px] w-[240px] md:w-[300px] px-6 md:px-8"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 10px 15px rgba(0,0,0,0.1)",
