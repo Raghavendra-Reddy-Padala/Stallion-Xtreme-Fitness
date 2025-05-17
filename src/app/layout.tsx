@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Stallion",
   description: "A Gym Website",
+  verification: {
+    google: "SU2TKRZ4JHB3OHtBHrI-J5VDXlmGUHSswnQKWIzT7-U",
+  },
 };
+
 
 export default function RootLayout({
   children,
