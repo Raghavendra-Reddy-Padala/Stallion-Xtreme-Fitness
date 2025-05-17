@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
   return (
@@ -36,118 +36,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div
-            className="bg-white p-6 md:p-8 rounded-md"
-            style={{ minHeight: "650px" }}
-          >
-            <form className="space-y-12 h-full flex flex-col justify-between">
-              <div className="flex-grow">
-                <div className="mb-10">
-                  <label
-                    htmlFor="name"
-                    className="block text-base text-black uppercase mb-2"
-                  >
-                    FULL NAME
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-0 py-2 border-0 border-b border-gray-900 focus:outline-none focus:ring-0 bg-transparent text-black"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-base font-medium text-black uppercase mb-2"
-                    >
-                      EMAIL
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-0 py-2 border-0 border-b border-gray-900 focus:outline-none focus:ring-0 bg-transparent text-black"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-base font-medium text-black uppercase mb-2"
-                    >
-                      PHONE NO.
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      className="w-full px-0 py-2 border-0 border-b border-gray-900 focus:outline-none focus:ring-0 bg-transparent text-black"
-                    />
-                  </div>
-                </div>
-
-                <div className="mb-10">
-                  <label
-                    htmlFor="subject"
-                    className="block text-base font-medium text-black uppercase mb-2"
-                  >
-                    SUBJECT
-                  </label>
-                  <div className="relative">
-                    <select
-                      id="subject"
-                      defaultValue=""
-                      className="w-full px-0 py-2 border-0 border-b border-gray-900 focus:outline-none focus:ring-0 appearance-none bg-transparent text-black"
-                    >
-                      <option value="" disabled></option>
-                      <option value="membership">Membership Inquiry</option>
-                      <option value="training">Personal Training</option>
-                      <option value="facilities">Facilities</option>
-                      <option value="other">Other</option>
-                    </select>
-                    <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                      <svg
-                        className="w-4 h-4 text-gray-900"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M19 9l-7 7-7-7"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mb-16">
-                  <label
-                    htmlFor="message"
-                    className="block text-base font-medium text-black uppercase mb-2"
-                  >
-                    MESSAGE
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-0 py-2 border-0 border-b border-gray-900 focus:outline-none focus:ring-0 bg-transparent text-black"
-                  ></textarea>
-                </div>
-              </div>
-
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="bg-[#e71b4b] text-white px-8 py-3 rounded-none flex items-center hover:bg-opacity-90 transition"
-                >
-                  SUBMIT <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
-              </div>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </div>
     </section>
