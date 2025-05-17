@@ -27,12 +27,10 @@ export default function VisionariesSection() {
                 ABHILASH
               </h3>
               <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] ">
-                Founder
+                The Relentless Visionary
               </p>
 
               <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg ">
-                Abhilash &ndash; The Relentless Visionary
-                <br />
                 From training clients on the gym floor to building one of
                 India&rsquo;s fastest-growing fitness empires, Abhilash&rsquo;s
                 journey is fueled by pure determination. What started as a dream
@@ -82,12 +80,10 @@ export default function VisionariesSection() {
                 SURESH Goyal
               </h3>
               <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] tracking-wider">
-                Founder
+                 The Backbone of the Brand
               </p>
 
               <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg">
-                Suresh Goyal &ndash; The Backbone of the Brand
-                <br />
                 Not just an investor &mdash; Suresh Goyal is the driving force
                 behind the rise of Stallion. With unmatched work ethic, business
                 instinct, and a hands-on approach, Suresh has been in the
