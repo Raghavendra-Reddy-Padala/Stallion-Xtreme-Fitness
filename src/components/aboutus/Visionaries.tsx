@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import ScrollAnimation from "../ui/ScrollAnimation"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import ScrollAnimation from "../ui/ScrollAnimation";
+import { motion } from "framer-motion";
 
 export default function VisionariesSection() {
   return (
@@ -14,30 +14,43 @@ export default function VisionariesSection() {
           <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wider text-center text-white mb-2 font-['AkiraExpanded']">
             MEET THE VISIONARIES
           </h2>
-          <p className="text-center text-gray-300 mb-10 md:mb-16 font-[Degular] tracking-wider text-lg ">Driven by Passion, Built on Grit.</p>
+          <p className="text-center text-gray-300 mb-10 md:mb-16 font-[Degular] tracking-wider text-lg ">
+            Driven by Passion, Built on Grit.
+          </p>
         </ScrollAnimation>
 
         {/* First Founder - Abhilash */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center mb-12 md:mb-16">
           <ScrollAnimation delay={0.2}>
             <div>
-              <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded'] ">ABHILASH</h3>
-              <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] ">IFBB Pro Founder</p>
-  
-              <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg ">
-                Abhilash didn&apos;t just win bodybuilding titles – he rewrote the rules. Frustrated by &apos;aesthetic-focused&apos;
-                gyms, he designed Stallion&apos;s brutal hypertrophy programs. His signature leg day has made grown men cry
-                (and squat PRs soar). A lifelong fitness enthusiast, Abhilash transformed his passion into Hyderabad&apos;s
-                most disruptive gym chain. After training at over 20 gyms across India, he identified a critical gap in
-                the market – facilities that prioritized real results over luxury amenities.
+              <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded'] ">
+                ABHILASH
+              </h3>
+              <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] ">
+                Founder
               </p>
-  
+
+              <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg ">
+                Abhilash &ndash; The Relentless Visionary
+                <br />
+                From training clients on the gym floor to building one of
+                India&rsquo;s fastest-growing fitness empires, Abhilash&rsquo;s
+                journey is fueled by pure determination. What started as a dream
+                during his days as a gym trainer has now grown into Stallion
+                Xtreme Fitness &ndash; a powerhouse with 6 thriving branches, a
+                nationwide fitness movement, and a legacy that inspires
+                thousands. Abhilash didn&rsquo;t just build a gym &mdash; he
+                created a platform for transformation, community, and
+                excellence. His commitment to the grind laid the foundation for
+                what Stallion is today.
+              </p>
+
               {/* <blockquote className="italic text-gray-300 border-l-4 border-[#e71b4b] pl-4 mb-4 md:mb-6 text-lg ">
                 &ldquo;A gym should be judged by the transformations it creates, not the chai it serves.&rdquo;
               </blockquote> */}
             </div>
           </ScrollAnimation>
-          
+
           <ScrollAnimation delay={0.4}>
             <div className="relative w-full aspect-[4/3] md:aspect-[638/467] mx-auto">
               <Image
@@ -62,20 +75,31 @@ export default function VisionariesSection() {
               />
             </div>
           </ScrollAnimation>
-          
+
           <ScrollAnimation delay={0.4} className="order-1 md:order-2">
             <div>
-              <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded']">SURESH</h3>
-              <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] tracking-wider">IFBB Pro Founder</p>
-  
-              <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg">
-                Abhilash didn&apos;t just win bodybuilding titles – he rewrote the rules. Frustrated by &apos;aesthetic-focused&apos;
-                gyms, he designed Stallion&apos;s brutal hypertrophy programs. His signature leg day has made grown men cry
-                (and squat PRs soar). A lifelong fitness enthusiast, Abhilash transformed his passion into Hyderabad&apos;s
-                most disruptive gym chain. After training at over 20 gyms across India, he identified a critical gap in
-                the market – facilities that prioritized real results over luxury amenities.
+              <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded']">
+                SURESH Goyal
+              </h3>
+              <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] tracking-wider">
+                Founder
               </p>
-  
+
+              <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg">
+                Suresh Goyal &ndash; The Backbone of the Brand
+                <br />
+                Not just an investor &mdash; Suresh Goyal is the driving force
+                behind the rise of Stallion. With unmatched work ethic, business
+                instinct, and a hands-on approach, Suresh has been in the
+                trenches from day one. He&rsquo;s strategized, hustled, and
+                built shoulder-to-shoulder with Abhilash. Suresh&rsquo;s
+                leadership, discipline, and vision played an equal role in
+                shaping Stallion Xtreme Fitness into a dominant brand &mdash;
+                not just in fitness, but in business culture. He isn&rsquo;t
+                behind the scenes &mdash; he&rsquo;s in the spotlight, earning
+                every bit&nbsp;of&nbsp;the&nbsp;success.
+              </p>
+
               {/* <blockquote className="italic text-gray-300 border-l-4 border-[#e71b4b] pl-4 mb-4 md:mb-6 text-lg">
                 &ldquo;A gym should be judged by the transformations it creates, not the chai it serves.&rdquo;
               </blockquote> */}
@@ -89,7 +113,7 @@ export default function VisionariesSection() {
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-6 md:mb-8 font-['AkiraExpanded']">
               TWO MEN. ONE OBSESSION. ZERO COMPROMISES.
             </h3>
-  
+
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.98 }}
@@ -107,5 +131,5 @@ export default function VisionariesSection() {
         </ScrollAnimation>
       </div>
     </section>
-  )
+  );
 }
