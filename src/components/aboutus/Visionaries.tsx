@@ -24,7 +24,7 @@ export default function VisionariesSection() {
           <ScrollAnimation delay={0.2}>
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded'] ">
-                ABHILASH
+                PARAVASTHU ABHILASH
               </h3>
               <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] ">
                 The Relentless Visionary
@@ -77,14 +77,14 @@ export default function VisionariesSection() {
           <ScrollAnimation delay={0.4} className="order-1 md:order-2">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded']">
-                SURESH Goyal
+                SURESH BHAYAL
               </h3>
               <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] tracking-wider">
                  The Backbone of the Brand
               </p>
 
               <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg">
-                Not just an investor &mdash; Suresh Goyal is the driving force
+                Not just an investor &mdash; Suresh Bhayal is the driving force
                 behind the rise of Stallion. With unmatched work ethic, business
                 instinct, and a hands-on approach, Suresh has been in the
                 trenches from day one. He&rsquo;s strategized, hustled, and
