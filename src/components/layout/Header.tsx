@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion"
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const menuRef = useRef(null)
+  const menuRef = useRef<HTMLDivElement | null>(null)
   
   // Handle scroll effect for header
   useEffect(() => {
@@ -30,9 +30,9 @@ export default function Header() {
   useEffect(() => {
     if (!mobileMenuOpen) return;
     
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: MouseEvent) => {
       // Check if the click is on the menu content or on the backdrop
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         closeMenu();
       }
     };
