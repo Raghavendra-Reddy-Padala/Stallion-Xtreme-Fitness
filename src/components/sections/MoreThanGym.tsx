@@ -30,19 +30,21 @@ export default function MoreThanGymSection() {
                     A home for champion
                   </h3>
 
-                  <p className="text-gray-800 mb-6 md:mb-8 text-base md:text-xl font-['Degular']">
-                    Founded by Mr. Abhilash & Mr. Suresh, Stallion Xtreme Fitness began in
-                    2018 as a 1,500 sq ft battleground in Gajularamaram, no
+<p className="text-gray-800 mb-6 md:mb-8 text-base md:text-xl font-['Degular'] leading-relaxed md:leading-loose tracking-wide">
+                    Founded by <strong>Mr. Abhilash</strong> &{" "}
+                    <strong>Mr. Suresh</strong>, Stallion Xtreme Fitness began
+                    in 2018 as a 9,000 sq ft battleground in Gajularamaram, no
                     distractions, just raw iron and relentless effort. Today,
                     our six branches host 3,000+ members who share one belief:
                     comfort is the enemy of growth. This isn&apos;t a gym chain;
                     it&apos;s a sweat-drenched proving ground where national
                     powerlifters, corporate warriors, and future champions train
-                    side by side. Every rack, kettlebell, and battle rope is
-                    battle tested to deliver one result: transformation. But
-                    what truly sets us apart isn&apos;t just our 24/7 access or
-                    premium equipment; it&apos;s how we&apos;ve redefined
-                    fitness culture itself, all within the comfort of fully air
+                    side by side. Every rack, kettlebell, battle rope, and
+                    professional equipment is battle tested to deliver one
+                    result: transformation. But what truly sets us apart
+                    isn&apos;t just our premium comprehensive equipment
+                    selection; it&apos;s how we&apos;ve redefined fitness
+                    culture itself, all within the comfort of fully air
                     conditioned spaces.
                   </p>
                 </div>

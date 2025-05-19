@@ -25,7 +25,7 @@ export default function AboutUsSection() {
           <div className="max-w-6xl mx-auto font-[Degular] tracking-wider text-lg font-semibold ">
             <p className="text-center text-gray-800 mb-10 leading-relaxed">
               Founded by Mr. Abhilash and Mr. Suresh, Stallion Xtreme Fitness
-              began in 2018 as a 1,500 sq ft battleground in Gajularamaram —
+              began in 2018 as a 9,000 sq ft battleground in Gajularamaram —
               built on raw iron and relentless effort. Today, our six branches
               host 3,000+ members who share one belief: comfort is the enemy of
               growth.
@@ -36,7 +36,7 @@ export default function AboutUsSection() {
               ground where national powerlifters, corporate warriors, and future
               champions train side-by-side. Every rack, kettlebell, and battle
               rope is battle-tested to deliver one result: transformation. But
-              what truly sets us apart isn&apos;t our 24/7 access or premium
+              what truly sets us apart isn&apos;t our premium
               equipment — it&apos;s how we&apos;ve redefined fitness culture
               itself.
             </p>

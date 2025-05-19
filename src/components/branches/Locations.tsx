@@ -11,7 +11,8 @@ export default function Locations() {
   const locations = [
     {
       id: "Chinthal",
-      name: "STALLION Chinthal",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Chinthal Branch",
       description:
         "Where it all began in 2018. Our original STALLION gym featuring no-frills hardcore equipment, championship powerlifting platforms, Atlas stones, and the original 'Wall of Shame' for unracked weights. Pure, raw gym experience for serious lifters.",
       image: "/images/branches/first.png",
@@ -24,7 +25,8 @@ export default function Locations() {
     },
     {
       id: "Ashok-Nagar-Bhel",
-      name: "STALLION ASHOK NAGAR BHEL",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Ashok Nagar BHEL Branch",
       description:
         "STALLION gym with CULT affiliation offering premium amenities and specialized programs. As a CULT-affiliated center, members enjoy access to exclusive group fitness classes, yoga studios, and dedicated wellness zones along with traditional STALLION strength training.",
       image: "/images/branches/second.png",
@@ -37,7 +39,8 @@ export default function Locations() {
     },
     {
       id: "GajulRamaram",
-      name: "STALLION GAJULRAMARAM",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Gajulramaram Branch",
       description:
         "STALLION strength training meets CULT fitness innovation. This CULT-affiliated STALLION gym features specialized functional training zones, cardio theaters, and recovery facilities alongside our signature strength equipment. Get the best of both worlds!",
       image: "/images/branches/third.png",
@@ -50,7 +53,8 @@ export default function Locations() {
     },
     {
       id: "Kondapur",
-      name: "STALLION KONDAPUR",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Kondapur Branch",
       description:
         "Tech-forward STALLION gym with CULT affiliation catering to IT professionals. Enjoy our STALLION strength equipment plus CULT-exclusive benefits like 24/7 access, smart workout tracking, and specialized programs designed for desk-bound warriors looking to break free.",
       image: "/images/branches/fourth.png",
@@ -63,7 +67,8 @@ export default function Locations() {
     },
     {
       id: "Subash-Nagar",
-      name: "STALLION SUBASH NAGAR",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Subash Nagar Branch",
       description:
         "Boutique STALLION gym with CULT affiliation offering a more personalized experience. Combines STALLION's strength-focused equipment with CULT's signature personalized training programs, nutrition counseling, and small group classes for a more intimate fitness journey.",
       image: "/images/branches/fifth.png",
@@ -76,7 +81,8 @@ export default function Locations() {
     },
     {
       id: "Suchitra",
-      name: "STALLION SUCHITRA",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Suchitra Branch",
       description:
         "Our newest STALLION facility with CULT affiliation. Experience the raw power of STALLION equipment plus exclusive CULT benefits including a sprawling CrossFit arena, Olympic lifting platforms, and dedicated combat sports zone for the ultimate fitness warriors.",
       image: "/images/branches/sixth.png",
@@ -133,10 +139,15 @@ export default function Locations() {
 
                   {/* Content layout */}
                   <div className="absolute inset-0 p-5 sm:p-8 flex flex-col">
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-3 sm:mb-4">
-                      <h3 className="text-xl sm:text-3xl font-bold text-white">
-                        {location.name}
-                      </h3>
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-1 sm:mb-1">
+                      <div>
+                        <h3 className="text-xl sm:text-3xl font-bold text-white">
+                          {location.name}
+                        </h3>
+                        <h4 className="text-sm sm:text-lg text-gray-200 mt-1 mb-2">
+                          {location.branch}
+                        </h4>
+                      </div>
 
                       {location.cultAffiliated && (
                         <div className="inline-flex px-3 py-1 sm:px-4 sm:py-2 text-sm bg-[#e71b4b] text-white rounded-sm self-start">

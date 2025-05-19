@@ -103,12 +103,12 @@ export default function Footer() {
             <p className="mb-2 text-gray-300">3rd Floor, above Sri Vidya Junior College, Chinthal,Hyderabad</p>
             <p className="mb-2 text-gray-300">Telangana 500037</p>
             <p className="mb-2">
-              <Link href="tel:+123456789" className="text-gray-300 hover:text-[#e71b4b] transition">
+              <Link href="tel:+918885110136" className="text-gray-300 hover:text-[#e71b4b] transition">
                 +91 8885110136
               </Link>
             </p>
             <p>
-              <Link href="mailto:info@stallion.com" className="text-gray-300 hover:text-[#e71b4b] transition">
+              <Link href="mailto:support@stallionxtremefitness.com" className="text-gray-300 hover:text-[#e71b4b] transition">
                 support@stallionxtremefitness.com
               </Link>
             </p>

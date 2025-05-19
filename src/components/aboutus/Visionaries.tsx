@@ -34,8 +34,7 @@ export default function VisionariesSection() {
                 From training clients on the gym floor to building one of
                 India&rsquo;s fastest-growing fitness empires, Abhilash&rsquo;s
                 journey is fueled by pure determination. What started as a dream
-                during his days as a gym trainer has now grown into Stallion
-                Xtreme Fitness &ndash; a powerhouse with 6 thriving branches, a
+                during his days as a gym trainer has now grown into <strong>Stallion Xtreme Fitness</strong>  &ndash; a powerhouse with 6 thriving branches, a
                 nationwide fitness movement, and a legacy that inspires
                 thousands. Abhilash didn&rsquo;t just build a gym &mdash; he
                 created a platform for transformation, community, and
@@ -77,14 +76,14 @@ export default function VisionariesSection() {
           <ScrollAnimation delay={0.4} className="order-1 md:order-2">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded']">
-                SURESH BHAYAL
+                SURESH CHOUDHARY
               </h3>
               <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] tracking-wider">
                  The Backbone of the Brand
               </p>
 
               <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed font-[Degular] tracking-wider text-lg">
-                Not just an investor &mdash; Suresh Bhayal is the driving force
+                Not just an investor &mdash; Suresh choudhary is the driving force
                 behind the rise of Stallion. With unmatched work ethic, business
                 instinct, and a hands-on approach, Suresh has been in the
                 trenches from day one. He&rsquo;s strategized, hustled, and
