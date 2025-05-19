@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Logo from "../ui/Logo";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +11,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const pathname = usePathname(); // Get the current path
 
   // Handle scroll effect for header
   useEffect(() => {
@@ -71,6 +73,11 @@ export default function Header() {
     open: { opacity: 1, y: 0 },
   };
 
+  // Helper function to determine if a link is active
+  const isActive = (path: string) => {
+    return pathname === path;
+  };
+
   return (
     <>
       <header
@@ -100,31 +107,41 @@ export default function Header() {
             <nav className="hidden md:flex items-center space-x-6 text-white">
               <Link
                 href="/"
-                className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]"
+                className={`transition text-xs md:text-base font-[modernist] ${
+                  isActive("/") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                }`}
               >
                 Home
               </Link>
               <Link
                 href="/about-us"
-                className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]"
+                className={`transition text-xs md:text-base font-[modernist] ${
+                  isActive("/about-us") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                }`}
               >
                 About Us
               </Link>
               <Link
                 href="/events"
-                className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]"
+                className={`transition text-xs md:text-base font-[modernist] ${
+                  isActive("/events") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                }`}
               >
                 Events
               </Link>
               <Link
                 href="/branches"
-                className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]"
+                className={`transition text-xs md:text-base font-[modernist] ${
+                  isActive("/branches") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                }`}
               >
                 Branches
               </Link>
               <Link
                 href="/stallions"
-                className="text-white hover:text-[#e71b4b] transition text-xs md:text-base font-[modernist]"
+                className={`transition text-xs md:text-base font-[modernist] ${
+                  isActive("/stallions") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                }`}
               >
                 Stallion Classic
               </Link>
@@ -134,7 +151,11 @@ export default function Header() {
             <div className="hidden md:block">
               <Link
                 href="/contact"
-                className="bg-[#e71b4b] text-white px-4 py-2 hover:bg-opacity-90 transition md:text-base"
+                className={`px-4 py-2 transition md:text-base ${
+                  isActive("/contact")
+                    ? "bg-[#e71b4b] text-white"
+                    : "bg-[#e71b4b] text-white hover:bg-opacity-90"
+                }`}
               >
                 Contact Us
               </Link>
@@ -186,7 +207,9 @@ export default function Header() {
                 <motion.div variants={menuItemVariants}>
                   <Link
                     href="/"
-                    className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
+                    className={`transition text-xl font-[modernist] ${
+                      isActive("/") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                    }`}
                     onClick={closeMenu}
                   >
                     Home
@@ -196,7 +219,9 @@ export default function Header() {
                 <motion.div variants={menuItemVariants}>
                   <Link
                     href="/about-us"
-                    className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
+                    className={`transition text-xl font-[modernist] ${
+                      isActive("/about-us") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                    }`}
                     onClick={closeMenu}
                   >
                     About Us
@@ -206,7 +231,9 @@ export default function Header() {
                 <motion.div variants={menuItemVariants}>
                   <Link
                     href="/events"
-                    className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
+                    className={`transition text-xl font-[modernist] ${
+                      isActive("/events") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                    }`}
                     onClick={closeMenu}
                   >
                     Events
@@ -216,7 +243,9 @@ export default function Header() {
                 <motion.div variants={menuItemVariants}>
                   <Link
                     href="/branches"
-                    className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
+                    className={`transition text-xl font-[modernist] ${
+                      isActive("/branches") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                    }`}
                     onClick={closeMenu}
                   >
                     Branches
@@ -226,7 +255,9 @@ export default function Header() {
                 <motion.div variants={menuItemVariants}>
                   <Link
                     href="/stallions"
-                    className="text-white hover:text-[#e71b4b] transition text-xl font-[modernist]"
+                    className={`transition text-xl font-[modernist] ${
+                      isActive("/stallions") ? "text-[#e71b4b]" : "text-white hover:text-[#e71b4b]"
+                    }`}
                     onClick={closeMenu}
                   >
                     Stallion Classic
@@ -239,7 +270,11 @@ export default function Header() {
                 >
                   <Link
                     href="/contact"
-                    className="bg-[#e71b4b] text-white px-8 py-3 flex items-center justify-center hover:bg-opacity-90 transition text-base font-[modernist] w-64"
+                    className={`px-8 py-3 flex items-center justify-center transition text-base font-[modernist] w-64 ${
+                      isActive("/contact")
+                        ? "bg-[#e71b4b] text-white"
+                        : "bg-[#e71b4b] text-white hover:bg-opacity-90"
+                    }`}
                     onClick={closeMenu}
                   >
                     Contact Us <ArrowRight className="ml-2 h-4 w-4" />

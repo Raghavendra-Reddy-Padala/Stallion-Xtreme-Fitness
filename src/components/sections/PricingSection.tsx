@@ -7,7 +7,7 @@ export default function PricingSection() {
   const pricingPlans = [
     {
       name: "Stallion Basic",
-      price: "₹ 2499",
+      price: "₹ 1999",
       originalPrice: "₹3000",
       period: "/month",
       features: [
@@ -19,12 +19,12 @@ export default function PricingSection() {
         "Group classes (Zumba, yoga & more)",
       ],
       duration: "1 month",
-      ctaText: "Join Classes",
-      ctaLink: "/Plans",
+      ctaText: "Join Now",
+      ctaLink: "/contact",
     },
     {
       name: "Stallion Pro",
-      price: "₹ 4499",
+      price: "₹ 1125",
       originalPrice: "₹7500",
       period: "/month",
       features: [
@@ -36,13 +36,13 @@ export default function PricingSection() {
         "Steam bath",
         "Group classes (Zumba, yoga & more)",
       ],
-      duration: "3 months",
-      ctaText: "Go Pro",
-      ctaLink: "/plans",
+      duration: "3 + 1 months ",
+      ctaText: "Join Now",
+      ctaLink: "/contact",
     },
     {
       name: "Stallion Elite",
-      price: "₹ 7999",
+      price: "₹ 999",
       originalPrice: "₹9000",
       period: "/month",
       features: [
@@ -54,13 +54,12 @@ export default function PricingSection() {
         "Steam bath",
         "Group classes (Zumba, yoga & more)",
       ],
-      duration: "6 months",
-      ctaText: "Go Elite",
-      ctaLink: "#",
-    },
+      duration: "6 + 1.5 months",
+      ctaText: "Join Now",
+      ctaLink: "contact"  },
     {
       name: "Stallion Legacy",
-      price: "₹ 11499",
+      price: "₹ 785",
       originalPrice: "₹14630",
       period: "/month",
       features: [
@@ -72,10 +71,9 @@ export default function PricingSection() {
         "Steam bath",
         "Group classes (Zumba, yoga & more)",
       ],
-      duration: "12 months",
+      duration: "12 + 2 months",
       ctaText: "Join Now",
-      ctaLink: "#",
-    },
+      ctaLink: "contact"  },
   ]
 
   return (
