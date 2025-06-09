@@ -9,41 +9,13 @@ import React from "react";
 
 export default function Locations() {
   const locations = [
-    {
-      id: "Chinthal",
-      name: "Stallion Xtreme Fitness",
-      branch: "-Chinthal Branch",
-      description:
-        "Where it all began in 2018. Our original STALLION gym featuring no-frills hardcore equipment, championship powerlifting platforms, Atlas stones, and the original 'Wall of Shame' for unracked weights. Pure, raw gym experience for serious lifters.",
-      image: "/images/branches/first.png",
-      address: " Gajularamaram, Hyderabad",
-      phone: "+91 8885110136",
-      email: "support@stallionxtremefitness.com",
-      mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d60885.86121180698!2d78.45144399999997!3d17.490018000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI5JzI0LjEiTiA3OMKwMjcnMDUuMiJF!5e0!3m2!1sen!2sus!4v1746471546448!5m2!1sen!2sus",
-      cultAffiliated: false,
-    },
-    {
-      id: "Ashok-Nagar-Bhel",
-      name: "Stallion Xtreme Fitness",
-      branch: "-Ashok Nagar BHEL Branch",
-      description:
-        "STALLION gym with CULT affiliation offering premium amenities and specialized programs. As a CULT-affiliated center, members enjoy access to exclusive group fitness classes, yoga studios, and dedicated wellness zones along with traditional STALLION strength training.",
-      image: "/images/branches/second.png",
-      address: "Ashok Nagar, Hyderabad",
-      phone: "+91 8885110136",
-      email: "support@stallionxtremefitness.com",
-      mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.083318461583!2d78.3104979!3d17.5035357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf33268a6996b%3A0x35f229e1c6558!2sStallion%20Xtreme%20Fitness%20-%20Available%20on%20cult.fit%20-%20Gym%20in%20BHEL%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1746472411149!5m2!1sen!2sin",
-      cultAffiliated: true,
-    },
-    {
+      {
       id: "GajulRamaram",
       name: "Stallion Xtreme Fitness",
       branch: "-Gajulramaram Branch",
       description:
         "STALLION strength training meets CULT fitness innovation. This CULT-affiliated STALLION gym features specialized functional training zones, cardio theaters, and recovery facilities alongside our signature strength equipment. Get the best of both worlds!",
-      image: "/images/branches/third.png",
+      image: "/images/branches/ramarambranch.JPG",
       address: "Gajulramaram, Hyderabad",
       phone: "+91 8885110136",
       email: "support@stallionxtremefitness.com",
@@ -52,26 +24,27 @@ export default function Locations() {
       cultAffiliated: true,
     },
     {
-      id: "Kondapur",
+      id: "Chinthal",
       name: "Stallion Xtreme Fitness",
-      branch: "-Kondapur Branch",
+      branch: "-Chinthal Branch",
       description:
-        "Tech-forward STALLION gym with CULT affiliation catering to IT professionals. Enjoy our STALLION strength equipment plus CULT-exclusive benefits like 24/7 access, smart workout tracking, and specialized programs designed for desk-bound warriors looking to break free.",
-      image: "/images/branches/fourth.png",
-      address: "Kondapur, Hyderabad",
+        "Where it all began in 2018. Our original STALLION gym featuring no-frills hardcore equipment, championship powerlifting platforms, Atlas stones, and the original 'Wall of Shame' for unracked weights. Pure, raw gym experience for serious lifters.",
+      image: "/images/branches/idplbranc.JPG",
+      address: " chintal, Hyderabad",
       phone: "+91 8885110136",
       email: "support@stallionxtremefitness.com",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7611.675296160824!2d78.35506039336227!3d17.467483033733526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300f9b21687%3A0xf8d2dbb56514126e!2sStallion%20fitness%20studio!5e0!3m2!1sen!2sin!4v1746472783497!5m2!1sen!2sin",
-      cultAffiliated: true,
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d60885.86121180698!2d78.45144399999997!3d17.490018000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI5JzI0LjEiTiA3OMKwMjcnMDUuMiJF!5e0!3m2!1sen!2sus!4v1746471546448!5m2!1sen!2sus",
+      cultAffiliated: false,
     },
-    {
+    
+  {
       id: "Subash-Nagar",
       name: "Stallion Xtreme Fitness",
       branch: "-Subash Nagar Branch",
       description:
         "Boutique STALLION gym with CULT affiliation offering a more personalized experience. Combines STALLION's strength-focused equipment with CULT's signature personalized training programs, nutrition counseling, and small group classes for a more intimate fitness journey.",
-      image: "/images/branches/fifth.png",
+      image: "/images/branches/komapllybranch.JPG",
       address: "Subash Nagar, Hyderabad",
       phone: "+91 8885110136",
       email: "support@stallionxtremefitness.com",
@@ -80,17 +53,46 @@ export default function Locations() {
       cultAffiliated: true,
     },
     {
+      id: "Kondapur",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Kondapur Branch",
+      description:
+        "Tech-forward STALLION gym with CULT affiliation catering to IT professionals. Enjoy our STALLION strength equipment plus CULT-exclusive benefits like 24/7 access, smart workout tracking, and specialized programs designed for desk-bound warriors looking to break free.",
+      image: "/images/branches/kondapur.JPG",
+      address: "Kondapur, Hyderabad",
+      phone: "+91 8885110136",
+      email: "support@stallionxtremefitness.com",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7611.675296160824!2d78.35506039336227!3d17.467483033733526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300f9b21687%3A0xf8d2dbb56514126e!2sStallion%20fitness%20studio!5e0!3m2!1sen!2sin!4v1746472783497!5m2!1sen!2sin",
+      cultAffiliated: true,
+    },
+    
+    {
       id: "Suchitra",
       name: "Stallion Xtreme Fitness",
       branch: "-Suchitra Branch",
       description:
         "Our newest STALLION facility with CULT affiliation. Experience the raw power of STALLION equipment plus exclusive CULT benefits including a sprawling CrossFit arena, Olympic lifting platforms, and dedicated combat sports zone for the ultimate fitness warriors.",
-      image: "/images/branches/sixth.png",
+      image: "/images/branches/suchitra.JPG",
       address: "Suchitra, Hyderabad",
       phone: "+91 8885110136",
       email: "support@stallionxtremefitness.com",
       mapUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15220.294853892834!2d78.45181098715821!3d17.50399429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91a2fe88dd5b%3A0x5594b7c0d998c25e!2sStallion%20Xtreme%20Fitness%20Suchitra%20-%20Available%20at%20cult.fit%20-%20Gyms%20in%20Quthbullapur%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1746472545479!5m2!1sen!2sin",
+      cultAffiliated: true,
+    },
+    {
+      id: "Ashok-Nagar-Bhel",
+      name: "Stallion Xtreme Fitness",
+      branch: "-Ashok Nagar BHEL Branch",
+      description:
+        "STALLION gym with CULT affiliation offering premium amenities and specialized programs. As a CULT-affiliated center, members enjoy access to exclusive group fitness classes, yoga studios, and dedicated wellness zones along with traditional STALLION strength training.",
+      image: "/images/branches/bhelnromal.jpg",
+      address: "Ashok Nagar, Hyderabad",
+      phone: "+91 8885110136",
+      email: "support@stallionxtremefitness.com",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.083318461583!2d78.3104979!3d17.5035357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf33268a6996b%3A0x35f229e1c6558!2sStallion%20Xtreme%20Fitness%20-%20Available%20on%20cult.fit%20-%20Gym%20in%20BHEL%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1746472411149!5m2!1sen!2sin",
       cultAffiliated: true,
     },
   ];
@@ -151,7 +153,7 @@ export default function Locations() {
 
                       {location.cultAffiliated && (
                         <div className="inline-flex px-3 py-1 sm:px-4 sm:py-2 text-sm bg-[#e71b4b] text-white rounded-sm self-start">
-                          CULT Affiliated
+                          CULT Partnered
                         </div>
                       )}
                     </div>
@@ -199,11 +201,11 @@ export default function Locations() {
                             whileTap={{ scale: 0.98 }}
                             className="w-full sm:w-auto"
                           >
-                            <Link
-                              href={`/contact?location=${location.id}`}
+                           <Link
+                              href={`/branches/${location.id}`}
                               className="w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base bg-[#e71b4b] text-white flex items-center justify-center sm:justify-start hover:bg-opacity-90 transition"
                             >
-                              Join Now <ArrowRight className="ml-2 h-4 w-4" />
+                              View Details <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
                           </motion.div>
                         </div>

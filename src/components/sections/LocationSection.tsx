@@ -8,34 +8,47 @@ import ScrollAnimation, { HoverCard } from "../ui/ScrollAnimation"
 export default function LocationsSection() {
   const locations = [
     {
-      name: "Chinthal",
-      description: "Stallion Xtreme Fitness,Chinthal Branch",
-      image: "/images/location/first.png",
-    },
-    {
-      name: "Ashok Nagar Bhel", 
-      description: "Stallion Xtreme Fitness,Ashok Nagar Bhel Branch",
-      image: "/images/location/second.png",
-    },
-    {
       name: "GajulRamaram",
       description: "Stallion Xtreme Fitness,GajulRamaram Branch",
-      image: "/images/location/third.png",
+      image: "/images/branches/ramaramherosection.JPG",
+      hoverImage: "/images/branches/ramaramhover.JPG", // Add your hover image path
+      link: "/branches/GajulRamaram",
+    },
+    {
+      name: "IDPL",
+      description: "Stallion Xtreme Fitness,Chinthal Branch",
+      image: "/images/branches/idplherosec.JPG",
+      hoverImage: "/images/branches/chinthalhover.JPG", // Add your hover image path
+      link: "/branches/Chinthal",
+    },
+    {
+      name: "Kompally",
+      description: "Stallion Xtreme Fitness,Subash Nagar Branch",
+      image: "/images/branches/kompallyherosec.JPG",
+      hoverImage: "/images/branches/subashhover.JPG", // Add your hover image path
+      link: "/branches/Subash-Nagar",
     },
     {
       name: "Kondapur",
       description: "Stallion Xtreme Fitness,Kondapur Branch",
-      image: "/images/location/fourth.png",
-    },
-    {
-      name: "Subash Nagar",
-      description: "Stallion Xtreme Fitness,Subash Nagar Branch",
-      image: "/images/location/fifth.png",
+      image: "/images/branches/kondapurhero.JPG",
+      hoverImage: "/images/branches/kondapurhover.JPG", // Add your hover image path
+      link: "/branches/kondapur",
     },
     {
       name: "Suchitra",
       description:"Stallion Xtreme Fitness,Suchitra Branch",
-      image: "/images/location/sixth.png",
+      image: "/images/branches/suchitrahero.JPG",
+      hoverImage: "/images/branches/suchitrahover.JPG", // Add your hover image path
+      link: "/branches/Suchitra",
+    },
+    {
+      name: "Ashok Nagar Bhel", 
+      description: "Stallion Xtreme Fitness,Ashok Nagar Bhel Branch",
+      image: 
+      "/images/branches/bhelhover.jpg",
+      hoverImage: "/images/branches/bhelcover.jpg", // Add your hover image path
+      link: "/branches/Ashok-Nagar-Bhel",
     },
   ]
 
@@ -55,13 +68,28 @@ export default function LocationsSection() {
           {locations.map((location, index) => (
             <ScrollAnimation key={index} delay={0.15 * (index % 3)}>
               <HoverCard className="relative overflow-hidden group aspect-[418/532]">
-                <Image src={location.image || "/placeholder.svg"} alt={location.name} fill className="object-cover" />
+                {/* Default Image */}
+                <Image 
+                  src={location.image || "/placeholder.svg"} 
+                  alt={location.name} 
+                  fill 
+                  className="object-cover transition-opacity duration-500 group-hover:opacity-0" 
+                />
+                
+                {/* Hover Image */}
+                <Image 
+                  src={location.hoverImage || location.image || "/placeholder.svg"} 
+                  alt={`${location.name} hover`} 
+                  fill 
+                  className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 absolute inset-0" 
+                />
+                
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 md:p-6 w-full">
                   <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-wider font-[Degular] text-white mb-2">{location.name}</h3>
                   <p className="text-gray-200 text-base md:text-lg mb-4">{location.description}</p>
                   <Link
-                    href="/branches"
+                    href={location.link}
                     className="inline-flex items-center bg-[#e71b4b] text-white px-3 md:px-4 py-2 rounded hover:bg-opacity-90 transition text-sm md:text-base"
                   >
                     Know More <ArrowRight className="ml-1 h-4 w-4" />
