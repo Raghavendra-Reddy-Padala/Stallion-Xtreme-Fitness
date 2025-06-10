@@ -67,10 +67,10 @@ export default function HeroSection() {
             transition={{ duration: 0.2 }}
           >
             <Link 
-              href="/next-section" 
+              href="/events" 
               className="border border-white text-white px-6 sm:px-8 py-2 flex items-center hover:bg-white/10 transition text-sm sm:text-base"
             >
-              Explore now
+              Explore Events
             </Link>
           </motion.div>
         </motion.div>
