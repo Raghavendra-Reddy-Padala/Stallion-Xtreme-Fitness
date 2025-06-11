@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowLeft, MapPin, Calendar, Clock, Users, Trophy, Star } from "lucide-react"
+import { ArrowLeft, MapPin, Calendar, Clock, Trophy, Star } from "lucide-react"
 import { useEffect, useState } from "react";
 
 interface EventDate {

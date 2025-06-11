@@ -80,7 +80,7 @@ export default function ContactForm() {
       } else {
         throw new Error('Form submission failed');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({success: false, message: 'Failed to send message. Please try again later.'});
     } finally {
       setIsSubmitting(false);

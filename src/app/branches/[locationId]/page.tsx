@@ -3,7 +3,7 @@
 import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, MapPin, Phone, Mail, Clock, Users } from 'lucide-react'
+import { ArrowLeft, MapPin, Phone, Mail, Clock } from 'lucide-react'
 import Footer from '@/components/layout/Footer'
 import ContactSection from '@/components/sections/ContactSection'
 import FaqSection from '@/components/sections/FAQ'
