@@ -1,14 +1,14 @@
 import EventDetailsPage from '@/components/events/EventDetailspage'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     eventId: string
-  }
+  }>
 }
 
-export default function EventPage({ params }: PageProps) {
-  // No need to await params here - they're automatically passed as props
-  return <EventDetailsPage eventId={params.eventId} />
+export default async function EventPage({ params }: PageProps) {
+  const { eventId } = await params
+  return <EventDetailsPage eventId={eventId} />
 }
 
 export async function generateStaticParams() {
@@ -20,6 +20,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps) {
+  const { eventId } = await params
+  
   const eventTitles = {
     'yoga-event': 'Stallion Yoga Event',
     'deadlift-workshop': 'Deadlift Workshop',
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: PageProps) {
   }
   
   return {
-    title: eventTitles[params.eventId as keyof typeof eventTitles] || 'Event Details',
+    title: eventTitles[eventId as keyof typeof eventTitles] || 'Event Details',
     description: 'Join us for an amazing fitness event at Stallion Xtreme Fitness'
   }
 }
