@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft, MapPin, Calendar, Clock, Trophy, Star } from "lucide-react";
+import { ArrowLeft, MapPin, Calendar, Clock, Trophy, Star, Gift } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface EventDate {
@@ -68,18 +68,19 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  
   const eventData: Record<string, EventData> = {
     "yoga-day": {
       title: "STALLION YOGA DAY",
-      subtitle: "",
-      date: { month: "JUN", day: "21", year: "2024", dayName: "FRIDAY" },
-      time: "6:00 AM - 9:00 AM",
+      subtitle: "Rise and Revive with Decathlon Suchitra - Go with the Flow",
+      date: { month: "JUN", day: "21", year: "2025", dayName: "SATURDAY" },
+      time: "6:30 AM - 9:00 AM",
       location: {
-        venue: "Stallion Classic Chinthal",
-        address: "Chinthal Nagar, Hyderabad, Telangana 500055",
-        mapLink: "https://maps.google.com/?q=City+Central+Park+Hyderabad",
+        venue: "Decathlon Suchitra",
+        address: "Parking Premises, Suchitra, Hyderabad, Telangana",
+        mapLink: "https://maps.app.goo.gl/Va6wGkCZRnsz4CMy9",
       },
-      registrationLink: "https://forms.gle/UnXU9DwzARB5bbkw7",
+      registrationLink: "https://play.decathlon.in/event-details/Rise-and-Revive-with-Decathlon--Suchitra--gowiththeflow/aa7646c0-44fb-11f0-a9dd-2bb4213dbc7a?utm_source=sharebutton&utm_medium=decathlon_play_partner_app&utm_campaign=externalshare",
       heroImage: "/images/events/yogabanner.jpg",
       gallery: [
         "/images/events/yoga1.jpg",
@@ -87,61 +88,62 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
         "/images/events/yoga3.jpg",
         "/images/events/yoga4.jpg",
       ],
-      description: `Join us for the 10th International Yoga Day celebration! This free community event brings together yoga enthusiasts of all levels to practice, learn, and celebrate the ancient art of yoga. Experience the transformative power of yoga with guided sessions from renowned instructors, meditation practices, and wellness workshops.`,
+      description: `Join us for the Stallion Yoga Day celebration on June 21st! This free community event brings together yoga enthusiasts of all levels to practice, learn, and celebrate the ancient art of yoga. Experience the transformative power of yoga with guided sessions, Sudarshan Kriya, Surya Namaskar, and an energizing Zumba session.`,
       highlights: [
-        "Free yoga session for all participants",
-        "Guided by certified yoga instructors",
-        "Special sessions for beginners",
-        "Meditation and breathing techniques",
-        "Yoga mats provided for those who need",
-        "Healthy refreshments after the session",
-        "Group photo and certificate of participation",
+        "Free participation with amazing rewards",
+        "₹100 Decathlon voucher for all participants",
+        "Exclusive gift hamper for every attendee",
+        "Sudarshan Kriya & warm-up sessions",
+        "Traditional Surya Namaskar practice",
+        "High-energy Zumba session with DJ",
+        "Guest speech and National Anthem",
+        "Bring your own yoga mat (mandatory)",
+        "Dress code: White T-shirt required",
       ],
       categories: [
         {
-          name: "Beginner Yoga",
+          name: "Sudarshan Kriya Session",
           description:
-            "Gentle introduction to basic yoga postures and breathing",
+            "Breathing technique and warm-up to prepare for the yoga practice",
           ageGroups: ["All ages"],
         },
         {
-          name: "Intermediate Yoga",
+          name: "Surya Namaskar",
           description:
-            "Flowing sequences and deeper postures for regular practitioners",
-          ageGroups: ["16+"],
+            "Traditional sun salutation sequence for strength and flexibility",
+          ageGroups: ["12+"],
         },
         {
-          name: "Senior Yoga",
+          name: "Zumba Fitness",
           description:
-            "Specialized session focusing on mobility and gentle movements",
-          ageGroups: ["50+"],
+            "High-energy dance fitness session with DJ cool down",
+          ageGroups: ["All ages"],
         },
       ],
       prizes: [
         {
-          position: "Most Enthusiastic Participant",
-          prize: "Yoga Mat + Wellness Package",
+          position: "Voucher",
+          prize: "₹100 worth Decathlon shopping Voucher ",
         },
         {
-          position: "Best Family Participation",
-          prize: "Family Yoga Session Voucher",
+          position: "Hamper",
+          prize: "A Sending Gift Hamper",
         },
       ],
       requirements: [
-        "Comfortable clothing suitable for exercise",
-        "Bring your own yoga mat if possible",
-        "Water bottle",
+        "White T-shirt (mandatory dress code)",
+        "Bring your own yoga mat (mandatory)",
+        "Water bottle for hydration",
         "Register online to guarantee your spot",
         "Arrive 15 minutes before start time",
       ],
       schedule: [
-        { time: "5:45 AM", activity: "Registration & Welcome" },
-        { time: "6:00 AM", activity: "Opening Ceremony" },
-        { time: "6:15 AM", activity: "Mass Yoga Session (Common Protocol)" },
-        { time: "7:00 AM", activity: "Category-specific Sessions" },
-        { time: "8:00 AM", activity: "Meditation & Relaxation" },
-        { time: "8:30 AM", activity: "Healthy Breakfast" },
-        { time: "9:00 AM", activity: "Closing & Group Photo" },
+        { time: "6:30 AM", activity: "Event begins - Opening Activity (Balloon Hoisting)" },
+        { time: "7:00 AM", activity: "Participants Gather - Sudarshan Kriya & Warm-up" },
+        { time: "7:40 AM", activity: "Guest Speech" },
+        { time: "8:10 AM", activity: "Surya Namaskar Practice" },
+        { time: "8:40 AM", activity: "Zumba Session (DJ Cool Down)" },
+        { time: "9:00 AM", activity: "National Anthem & Closing" },
       ],
     },
   };
@@ -188,6 +190,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
           </a>
         </motion.div>
       )}
+      
       {/* Hero Section */}
       <div className="relative h-[50vh] overflow-hidden">
         <Image
@@ -212,7 +215,6 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
             className="flex items-center gap-1 bg-black/30 backdrop-blur-sm text-white px-3 py-2 rounded-lg hover:bg-black/70 transition"
           >
             <ArrowLeft size={20} />
-            
           </Link>
         </motion.div>
 
@@ -227,12 +229,10 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-4 font-['AkiraExpanded']">
                 {event.title}
               </h1>
-              <p className="text-xl text-gray-200 mb-6 font-['Degular'] tracking-wider max-w-2xl">
-                {event.subtitle}
-              </p>
+            
 
               {/* Quick Info */}
-              <div className="flex flex-wrap gap-6 text-white">
+              <div className="flex flex-wrap gap-6 text-white mb-6">
                 <div className="flex items-center gap-2">
                   <Calendar size={20} className="text-[#e71b4b]" />
                   <span className="font-['Degular']">
@@ -256,8 +256,60 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="container mx-auto px-4 py-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="bg-red-500/90 backdrop-blur-sm rounded-lg border border-white/20 mb-8 
+                     p-4 md:p-3 lg:py-2 lg:px-6"
+        >
+          {/* Mobile Layout */}
+          <div className="md:hidden flex flex-wrap items-center gap-4 text-white">
+            <div className="flex items-center gap-2">
+              <Star size={20} className="text-white" />
+              <span className="font-bold font-['Degular']">FREE Registration</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Gift size={20} className="text-white" />
+              <span className="font-bold font-['Degular']">Decathlon Shopping Voucher + Gift Hamper</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-bold font-['Degular']">
+                Bring Yoga Mat
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-bold font-['Degular']">
+                Dress: White T-shirt
+              </span>
+            </div>
+          </div>
+
+          <div className="hidden md:flex items-center justify-between text-white">
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2">
+                <Star size={18} className="text-white" />
+                <span className="font-bold font-['Degular'] text-sm">FREE Registration</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Gift size={18} className="text-white" />
+                <span className="font-bold font-['Degular'] text-sm">Decathlon Shopping Voucher + Gift Hamper</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="bg-white/20 px-2 py-1 rounded-full text-xs font-bold font-['Degular']">
+                Bring Yoga Mat
+              </span>
+              <span className="bg-white/20 px-2 py-1 rounded-full text-xs font-bold font-['Degular']">
+                White T-shirt Required
+              </span>
+            </div>
+          </div>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-14">
+              
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-12">
             {/* Description */}
@@ -298,14 +350,14 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               </div>
             </motion.section>
 
-            {/* Yoga Categories */}
+            {/* Event Activities */}
             <motion.section
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
               <h2 className="text-3xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
-                Yoga Sessions
+                Event Activities
               </h2>
               <div className="space-y-6">
                 {event.categories.map(
@@ -370,24 +422,28 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
 
           {/* Sidebar */}
           <div className="space-y-8">
-            {/* Registration Card - Changed back to red */}
+            {/* Registration Card */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="bg-[#e71b4b] text-white p-6 rounded-lg sticky top-8"
+              className="bg-gradient-to-br from-[#e71b4b] to-[#c41640] text-white p-6 rounded-lg  top-8 shadow-xl"
             >
               <h3 className="text-2xl font-bold uppercase tracking-wider mb-4 font-['AkiraExpanded']">
                 Register Now
               </h3>
               <div className="space-y-4 mb-6">
-                <div className="flex justify-between">
-                  <span className="font-['Degular']">Participation:</span>
-                  <span className="font-bold font-['Degular']">Free</span>
+                <div className="flex justify-between items-center border-b border-white/20 pb-2">
+                  <span className="font-['Degular']">Registration:</span>
+                  <span className="font-bold font-['Degular'] text-yellow-300">FREE</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="font-['Degular']">Deadline:</span>
-                  <span className="font-bold font-['Degular']">June 20th</span>
+                <div className="flex justify-between items-center border-b border-white/20 pb-2">
+                  <span className="font-['Degular']">Decathlon Voucher:</span>
+                  <span className="font-bold font-['Degular'] text-yellow-300">₹100</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="font-['Degular']">Gift Hamper:</span>
+                  <span className="font-bold font-['Degular'] text-yellow-300">Included</span>
                 </div>
               </div>
 
@@ -403,7 +459,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               </motion.a>
 
               <p className="text-sm text-white/80 mt-4 text-center font-['Degular']">
-                Limited mats available, register early!
+                Don't forget: White T-shirt & Yoga mat required!
               </p>
             </motion.div>
 
@@ -435,12 +491,12 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
                   rel="noopener noreferrer"
                   className="block w-full bg-[#e71b4b] text-white py-2 text-center font-medium hover:bg-opacity-90 transition font-['Degular'] rounded-lg mt-4"
                 >
-                  View on Google Maps
+                  View Event Details
                 </a>
               </div>
             </motion.div>
 
-            {/* Prizes */}
+            {/* Rewards */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -448,8 +504,8 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               className="bg-gradient-to-b from-yellow-50 to-yellow-100 p-6 rounded-lg"
             >
               <h3 className="text-xl font-bold uppercase tracking-wider text-black mb-4 font-['AkiraExpanded'] flex items-center gap-2">
-                <Trophy className="text-yellow-600" />
-                Special Recognitions
+                <Gift className="text-yellow-600" />
+                Event Rewards
               </h3>
               <div className="space-y-3">
                 {event.prizes.map((prize: EventPrize, index: number) => (
@@ -476,7 +532,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               className="bg-blue-50 p-6 rounded-lg"
             >
               <h3 className="text-xl font-bold uppercase tracking-wider text-black mb-4 font-['AkiraExpanded']">
-                What to Bring
+                Essential Requirements
               </h3>
               <ul className="space-y-2">
                 {event.requirements.map((req: string, index: number) => (
@@ -489,6 +545,74 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
                 ))}
               </ul>
             </motion.div>
+ <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="mt-16 space-y-8"
+        >
+          {/* Presented By */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
+              Presented By
+            </h3>
+            <div className="flex justify-center">
+              <div className="bg-white p-8 rounded-lg shadow-lg border">
+                <Image
+                  src="/images/hero/stallion.png"
+                  alt="Stallion Fitness"
+                  width={200}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* In Partnership With */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
+              In Partnership With
+            </h3>
+            <div className="flex flex-row justify-center items-stretch gap-4 md:gap-8">
+              {/* Decathlon Partner */}
+              <div className="bg-white p-6 rounded-lg shadow-lg border w-64 h-40 flex flex-col justify-between">
+                <div className="flex-1 flex items-center justify-center mb-4">
+                  <Image
+                    src="/sponser/dc.webp"
+                    alt="Decathlon Suchitra"
+                    width={150}
+                    height={60}
+                    className="object-contain max-w-full max-h-full"
+                  />
+                </div>
+             
+              </div>
+
+              {/* Art of Living Partner */}
+              <div className="bg-white p-6 rounded-lg shadow-lg border w-64 h-40 flex flex-col justify-between">
+                <div className="flex-1 flex items-center justify-center mb-4">
+                  <Image
+                    src="/sponser/aol.webp"
+                    alt="Art of Living"
+                    width={120}
+                    height={50}
+                    className="object-contain max-w-full max-h-full"
+                  />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </motion.div>            
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.6 }}
+              className="bg-white p-6 rounded-lg"
+            > 
+            </motion.div>
+            
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function HeroSection() {
       {/* Background image with bodybuilder */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/branches/hero.png"
+          src="/images/hero/hero.png"
           alt="Bodybuilder showing muscular back in gym"
           fill
           className="object-cover"
