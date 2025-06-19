@@ -459,7 +459,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               </motion.a>
 
               <p className="text-sm text-white/80 mt-4 text-center font-['Degular']">
-                Don't forget: White T-shirt & Yoga mat required!
+                Don&apos;t forget: White T-shirt & Yoga mat required!
               </p>
             </motion.div>
 
