@@ -122,8 +122,8 @@ const locationData: LocationData = {
       "Wall of Shame (Motivation Wall)",
     ],
     timings: {
-      weekdays: "5:00 AM - 1:00 PM || 3:30 PM - 10:00 PM”,
-      weekends: "5:00 AM - 11:00 AM",
+       weekdays: "5:00 AM - 1:00 PM || 3:30 PM - 10:00 PM",
+  weekends: "5:00 AM - 11:00 AM",
     },
   },
   "ashok-nagar-bhel": {
