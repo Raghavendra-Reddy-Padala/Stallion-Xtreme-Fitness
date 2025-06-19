@@ -88,7 +88,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
         "/images/events/yoga3.jpg",
         "/images/events/yoga4.jpg",
       ],
-      description: `Join us for the Stallion Yoga Day celebration on June 21st! This free community event brings together yoga enthusiasts of all levels to practice, learn, and celebrate the ancient art of yoga. Experience the transformative power of yoga with guided sessions, Sudarshan Kriya, Surya Namaskar, and an energizing Zumba session.`,
+      description: `Join us for the 11th international Yoga Day by Stallion Group! This free community event brings together yoga enthusiasts of all levels to practice, learn, and celebrate the ancient art of yoga. Experience the transformative power of yoga with guided sessions, Sudarshan Kriya, Surya Namaskar, and an energizing Zumba session.`,
       highlights: [
         "Free participation with amazing rewards",
         "₹100 Decathlon voucher for all participants",
