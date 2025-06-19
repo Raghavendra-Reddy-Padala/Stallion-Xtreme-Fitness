@@ -51,7 +51,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-[#e71b4b] to-[#ff6b6b] bg-clip-text hover:from-white hover:to-gray-200 transition-all duration-300 transform hover:scale-105 inline-block"
               >
-                TECHMOCHa
+                TECHMOCHA
               </Link>
             </div>
            
