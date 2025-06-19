@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export default function Highlights() {
   return (
     <section className="py-10 md:py-16 lg:py-20 bg-[#1a1a1a] text-white px-4 sm:px-6 md:px-8">
@@ -9,16 +7,17 @@ export default function Highlights() {
         </h2>
         <div className="relative w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg">
           <div className="aspect-video w-full">
-            <Image
-              src="/images/events/vid.png"
-              alt="Bodybuilder showing muscular back in gym"
-              className="object-cover rounded-lg"
-              width={1200}
-              height={675}
-              priority
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/B5qSKp4cBik?si=Q3VtPR6iyn5LWkBv" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+              className="rounded-lg"
+            ></iframe>
           </div>
         </div>
       </div>

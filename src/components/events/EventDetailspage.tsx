@@ -68,7 +68,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   const eventData: Record<string, EventData> = {
     "yoga-day": {
       title: "STALLION YOGA DAY",
@@ -80,7 +80,8 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
         address: "Parking Premises, Suchitra, Hyderabad, Telangana",
         mapLink: "https://maps.app.goo.gl/Va6wGkCZRnsz4CMy9",
       },
-      registrationLink: "https://play.decathlon.in/event-details/Rise-and-Revive-with-Decathlon--Suchitra--gowiththeflow/aa7646c0-44fb-11f0-a9dd-2bb4213dbc7a?utm_source=sharebutton&utm_medium=decathlon_play_partner_app&utm_campaign=externalshare",
+      registrationLink:
+        "https://play.decathlon.in/event-details/Rise-and-Revive-with-Decathlon--Suchitra--gowiththeflow/aa7646c0-44fb-11f0-a9dd-2bb4213dbc7a?utm_source=sharebutton&utm_medium=decathlon_play_partner_app&utm_campaign=externalshare",
       heroImage: "/images/events/yogabanner.jpg",
       gallery: [
         "/images/events/yoga1.jpg",
@@ -115,8 +116,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
         },
         {
           name: "Zumba Fitness",
-          description:
-            "High-energy dance fitness session with DJ cool down",
+          description: "High-energy dance fitness session with DJ cool down",
           ageGroups: ["All ages"],
         },
       ],
@@ -138,8 +138,14 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
         "Arrive 15 minutes before start time",
       ],
       schedule: [
-        { time: "6:30 AM", activity: "Event begins - Opening Activity (Balloon Hoisting)" },
-        { time: "7:00 AM", activity: "Participants Gather - Sudarshan Kriya & Warm-up" },
+        {
+          time: "6:30 AM",
+          activity: "Event begins - Opening Activity (Balloon Hoisting)",
+        },
+        {
+          time: "7:00 AM",
+          activity: "Participants Gather - Sudarshan Kriya & Warm-up",
+        },
         { time: "7:40 AM", activity: "Guest Speech" },
         { time: "8:10 AM", activity: "Surya Namaskar Practice" },
         { time: "8:40 AM", activity: "Zumba Session (DJ Cool Down)" },
@@ -190,7 +196,7 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
           </a>
         </motion.div>
       )}
-      
+
       {/* Hero Section */}
       <div className="relative h-[50vh] overflow-hidden">
         <Image
@@ -229,7 +235,6 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-wider text-white mb-4 font-['AkiraExpanded']">
                 {event.title}
               </h1>
-            
 
               {/* Quick Info */}
               <div className="flex flex-wrap gap-6 text-white mb-6">
@@ -268,11 +273,15 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
           <div className="md:hidden flex flex-wrap items-center gap-4 text-white">
             <div className="flex items-center gap-2">
               <Star size={20} className="text-white" />
-              <span className="font-bold font-['Degular']">FREE Registration</span>
+              <span className="font-bold font-['Degular']">
+                FREE Registration
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Gift size={20} className="text-white" />
-              <span className="font-bold font-['Degular']">Decathlon Shopping Voucher + Gift Hamper</span>
+              <span className="font-bold font-['Degular']">
+                Decathlon Shopping Voucher + Gift Hamper
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-bold font-['Degular']">
@@ -290,11 +299,15 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <Star size={18} className="text-white" />
-                <span className="font-bold font-['Degular'] text-sm">FREE Registration</span>
+                <span className="font-bold font-['Degular'] text-sm">
+                  FREE Registration
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <Gift size={18} className="text-white" />
-                <span className="font-bold font-['Degular'] text-sm">Decathlon Shopping Voucher + Gift Hamper</span>
+                <span className="font-bold font-['Degular'] text-sm">
+                  Decathlon Shopping Voucher + Gift Hamper
+                </span>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -309,7 +322,6 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-14">
-              
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-12">
             {/* Description */}
@@ -435,15 +447,21 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center border-b border-white/20 pb-2">
                   <span className="font-['Degular']">Registration:</span>
-                  <span className="font-bold font-['Degular'] text-yellow-300">FREE</span>
+                  <span className="font-bold font-['Degular'] text-yellow-300">
+                    FREE
+                  </span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/20 pb-2">
                   <span className="font-['Degular']">Decathlon Voucher:</span>
-                  <span className="font-bold font-['Degular'] text-yellow-300">₹100</span>
+                  <span className="font-bold font-['Degular'] text-yellow-300">
+                    ₹100
+                  </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="font-['Degular']">Gift Hamper:</span>
-                  <span className="font-bold font-['Degular'] text-yellow-300">Included</span>
+                  <span className="font-bold font-['Degular'] text-yellow-300">
+                    Included
+                  </span>
                 </div>
               </div>
 
@@ -545,74 +563,70 @@ export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
                 ))}
               </ul>
             </motion.div>
- <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-          className="mt-16 space-y-8"
-        >
-          {/* Presented By */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
-              Presented By
-            </h3>
-            <div className="flex justify-center">
-              <div className="bg-white p-8 rounded-lg shadow-lg border">
-                <Image
-                  src="/images/hero/stallion.png"
-                  alt="Stallion Fitness"
-                  width={200}
-                  height={80}
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* In Partnership With */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
-              In Partnership With
-            </h3>
-            <div className="flex flex-row justify-center items-stretch gap-4 md:gap-8">
-              {/* Decathlon Partner */}
-              <div className="bg-white p-6 rounded-lg shadow-lg border w-64 h-40 flex flex-col justify-between">
-                <div className="flex-1 flex items-center justify-center mb-4">
-                  <Image
-                    src="/sponser/dc.webp"
-                    alt="Decathlon Suchitra"
-                    width={150}
-                    height={60}
-                    className="object-contain max-w-full max-h-full"
-                  />
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="mt-16 space-y-8"
+            >
+              {/* Presented By */}
+              <div className="text-center">
+                <h3 className="text-2xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
+                  Presented By
+                </h3>
+                <div className="flex justify-center">
+                  <div className="bg-white p-8 rounded-lg shadow-lg border">
+                    <Image
+                      src="/images/hero/stallion.png"
+                      alt="Stallion Fitness"
+                      width={200}
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
-             
               </div>
 
-              {/* Art of Living Partner */}
-              <div className="bg-white p-6 rounded-lg shadow-lg border w-64 h-40 flex flex-col justify-between">
-                <div className="flex-1 flex items-center justify-center mb-4">
-                  <Image
-                    src="/sponser/aol.webp"
-                    alt="Art of Living"
-                    width={120}
-                    height={50}
-                    className="object-contain max-w-full max-h-full"
-                  />
+              {/* In Partnership With */}
+              <div className="text-center">
+                <h3 className="text-2xl font-bold uppercase tracking-wider text-black mb-6 font-['AkiraExpanded']">
+                  In Partnership With
+                </h3>
+                <div className="flex flex-row justify-center items-stretch gap-4 md:gap-8">
+                  {/* Decathlon Partner */}
+                  <div className="bg-white p-6 rounded-lg shadow-lg border w-64 h-40 flex flex-col justify-between">
+                    <div className="flex-1 flex items-center justify-center mb-4">
+                      <Image
+                        src="/sponser/dc.webp"
+                        alt="Decathlon Suchitra"
+                        width={150}
+                        height={60}
+                        className="object-contain max-w-full max-h-full"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Art of Living Partner */}
+                  <div className="bg-white p-6 rounded-lg shadow-lg border w-64 h-40 flex flex-col justify-between">
+                    <div className="flex-1 flex items-center justify-center mb-4">
+                      <Image
+                        src="/sponser/aol.webp"
+                        alt="Art of Living"
+                        width={120}
+                        height={50}
+                        className="object-contain max-w-full max-h-full"
+                      />
+                    </div>
+                  </div>
                 </div>
-                
               </div>
-            </div>
-          </div>
-        </motion.div>            
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6 }}
               className="bg-white p-6 rounded-lg"
-            > 
-            </motion.div>
-            
+            ></motion.div>
           </div>
         </div>
       </div>
