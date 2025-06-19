@@ -60,7 +60,7 @@ const extractVideoId = (url: string): string => {
 };
 
 const locationData: LocationData = {
-  chinthal: {
+    chinthal: {
     id: "Chinthal",
     name: "Stallion Xtreme Fitness",
     branch: "Chinthal Branch",
@@ -122,8 +122,8 @@ const locationData: LocationData = {
       "Wall of Shame (Motivation Wall)",
     ],
     timings: {
-      weekdays: "5:00 AM - 11:00 PM",
-      weekends: "6:00 AM - 10:00 PM",
+      weekdays: "5:00 AM - 1:00 PM || 3:30 PM - 10:00 PM”,
+      weekends: "5:00 AM - 11:00 AM",
     },
   },
   "ashok-nagar-bhel": {
@@ -181,8 +181,8 @@ const locationData: LocationData = {
       "Recovery Room",
     ],
     timings: {
-      weekdays: "5:30 AM - 10:30 PM",
-      weekends: "6:30 AM - 9:30 PM",
+      weekdays: "5:30 AM - 10:00 PM",
+weekends: "6:00 AM - 11:00 AM",
     },
   },
   gajulramaram: {
@@ -240,8 +240,8 @@ const locationData: LocationData = {
       "Nutrition Consultation Room",
     ],
     timings: {
-      weekdays: "5:30 AM - 10:30 PM",
-      weekends: "6:00 AM - 10:00 PM",
+      weekdays: "5:30 AM - 10:00 PM",
+      weekends: "6:00 AM - 11:00 AM",
     },
   },
   kondapur: {
@@ -302,8 +302,8 @@ const locationData: LocationData = {
       "High-Speed WiFi Throughout",
     ],
     timings: {
-      weekdays: "24/7 Access",
-      weekends: "24/7 Access",
+     weekdays: "5:30 AM - 10:00 PM",
+      weekends: "6:00 AM - 11:00 AM",
     },
   },
   "subash-nagar": {
@@ -361,8 +361,8 @@ const locationData: LocationData = {
       "Wellness Assessment Tools",
     ],
     timings: {
-      weekdays: "6:00 AM - 10:00 PM",
-      weekends: "7:00 AM - 9:00 PM",
+      weekdays: "5:30 AM - 10:00 PM",
+      weekends: "6:00 AM - 11:00 AM",
     },
   },
   suchitra: {
@@ -427,8 +427,8 @@ const locationData: LocationData = {
       "Specialized Equipment Collection",
     ],
     timings: {
-      weekdays: "5:00 AM - 11:00 PM",
-      weekends: "6:00 AM - 10:00 PM",
+      weekdays: "5:30 AM - 10:00 PM",
+      weekends: "6:00 AM - 11:00 AM",
     },
   },
 };
