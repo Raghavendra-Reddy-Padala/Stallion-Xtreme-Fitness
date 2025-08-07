@@ -206,18 +206,18 @@ export default function HeroSection() {
       <div className="p-5 pr-10">
         <div className="mb-4">
           <h3 className="text-gray-900 font-semibold text-lg mb-2">
-            Stallion Yoga Event
+            Stallion Xtreme Fitness
           </h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Join us for an exceptional yoga experience. Limited seats available.
+            Wanna get fit? then why the Wait? join any one of our premuium gyms right now!, Have quries about our services? tap the link below to get in touch with us.
           </p>
         </div>
         
         <Link 
-          href="/events/yoga-event" 
+          href="/contact" 
           className="inline-block bg-[#e71b4b] text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-[#d1163f] transition-colors duration-200 shadow-sm"
         >
-          Register Now
+          Contact us
         </Link>
       </div>
     </motion.div>

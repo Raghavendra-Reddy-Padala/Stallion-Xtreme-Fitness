@@ -24,7 +24,6 @@ interface Trainer {
   specialization: string;
   experience: string;
   image: string;
-  certifications: string[];
 }
 
 interface Location {
@@ -51,7 +50,6 @@ interface LocationData {
   [key: string]: Location;
 }
 
-// Helper function to extract video ID from YouTube URL
 const extractVideoId = (url: string): string => {
   const regex =
     /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
@@ -81,36 +79,33 @@ const locationData: LocationData = {
       },
       {
         id: "chinthal-2",
-        title: "Powerlifting at Stallion Chinthal",
-        url: "https://youtu.be/dQw4w9WgXcQ",
+        title: "Stallion Xtreme Fitness",
+        url: "https://youtu.be/55Hdc81F-9s?si=IZns88GKXgUrw5s2",
       },
       {
         id: "chinthal-3",
-        title: "Atlas Stone Training Sessions",
-        url: "https://youtu.be/9bZkp7q19f0",
+        title: "Stallion Classic 2024 Highlights",
+        url: "https://youtu.be/B5qSKp4cBik?si=eWhQitPynfUyGIhu",
       },
     ],
     trainers: [
       {
-        name: "Rajesh Kumar",
+        name: " ",
         specialization: "Powerlifting & Strength Training",
         experience: "8 years",
-        image: "/images/trainers/rajesh.jpg",
-        certifications: ["NSCA-CPT", "Powerlifting Coach Level 2"],
+        image: "/images/trainers/chintal1.JPG",
       },
       {
-        name: "Priya Sharma",
+        name: " ",
         specialization: "Functional Training & CrossFit",
         experience: "5 years",
-        image: "/images/trainers/priya.jpg",
-        certifications: ["CrossFit Level 2", "Functional Movement Screen"],
+        image: "/images/trainers/chintal2.JPG",
       },
       {
-        name: "Vikram Singh",
+        name: " ",
         specialization: "Bodybuilding & Nutrition",
         experience: "6 years",
-        image: "/images/trainers/vikram.jpg",
-        certifications: ["ACSM-CPT", "Sports Nutrition Specialist"],
+        image: "/images/trainers/chintal3.JPG",
       },
     ],
     facilities: [
@@ -143,33 +138,37 @@ const locationData: LocationData = {
       {
         id: "ashok-1",
         title: "CULT Classes at Ashok Nagar Branch",
-        url: "https://youtu.be/UPfGgwF8ySk?si=wFQP9nH5lQ21Xqyi",
+        url: "https://youtu.be/55Hdc81F-9s?si=uF65IzpLYB9wNZH_",
       },
       {
         id: "ashok-2",
-        title: "Yoga Studio Tour",
-        url: "https://youtu.be/jNQXAC9IVRw",
+        title: "Stallion Xtreme Fitness",
+        url: "https://youtu.be/-jPO-V0e5Cs?si=nEr6wzeaQftaU6jt",
       },
       {
         id: "ashok-3",
-        title: "Group Fitness Sessions",
-        url: "https://youtu.be/9bZkp7q19f0",
+        title: "Stallion classic 2024 Highlights",
+        url: "https://youtu.be/1qMg2Pbdcjg?si=eZWOrAvoNN2mFT3p",
       },
     ],
     trainers: [
       {
-        name: "Anita Reddy",
+        name: " ",
         specialization: "CULT Fitness & Yoga",
         experience: "7 years",
-        image: "/images/trainers/anita.jpg",
-        certifications: ["CULT Certified", "RYT-200 Yoga"],
+        image: "/images/trainers/bhel1.JPG",
       },
       {
-        name: "Ravi Teja",
+        name: " ",
         specialization: "Strength Training & HIIT",
         experience: "4 years",
-        image: "/images/trainers/ravi.jpg",
-        certifications: ["CULT Certified", "HIIT Specialist"],
+        image: "/images/trainers/behl2.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Strength Training & HIIT",
+        experience: "4 years",
+        image: "/images/trainers/bhel3.JPG",
       },
     ],
     facilities: [
@@ -201,34 +200,45 @@ weekends: "6:00 AM - 11:00 AM",
     youtubeVideos: [
       {
         id: "gajul-1",
-        title: "Functional Training at Gajulramaram",
-        url: "https://youtu.be/UPfGgwF8ySk?si=wFQP9nH5lQ21Xqyi",
+        title: "Stallion Xtreme Fitness website launch",
+        url: "https://youtu.be/55Hdc81F-9s?si=CJxOhnxA3iyXnwsM",
       },
       {
         id: "gajul-2",
-        title: "Cardio Theater Experience",
-        url: "https://youtu.be/jNQXAC9IVRw",
+        title: "Stallion Xtreme Fitness Event",
+        url: "https://youtu.be/-jPO-V0e5Cs?si=ObvLAgeD0NNBC26g",
       },
       {
         id: "gajul-3",
-        title: "Recovery Facilities Tour",
-        url: "https://youtu.be/9bZkp7q19f0",
+        title: "Stallion Classic 2024 Highlights",
+        url: "https://youtu.be/ybo_ypuq1p0?si=9UaLeizpAhZNSQec",
       },
     ],
     trainers: [
+     
       {
-        name: "Suresh Babu",
-        specialization: "Functional Training & Rehabilitation",
-        experience: "9 years",
-        image: "/images/trainers/suresh.jpg",
-        certifications: ["FMS Certified", "Corrective Exercise Specialist"],
-      },
-      {
-        name: "Meera Patel",
+        name: " ",
         specialization: "Cardio Training & Weight Loss",
         experience: "4 years",
-        image: "/images/trainers/meera.jpg",
-        certifications: ["ACSM Certified", "Weight Management Specialist"],
+        image: "/images/trainers/g1.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Cardio Training & Weight Loss",
+        experience: "4 years",
+        image: "/images/trainers/g2.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Cardio Training & Weight Loss",
+        experience: "4 years",
+        image: "/images/trainers/g3.JPG",
+      },
+       {
+        name: " ",
+        specialization: "Functional Training & Rehabilitation",
+        experience: "9 years",
+        image: "/images/trainers/g4.JPG",
       },
     ],
     facilities: [
@@ -260,37 +270,45 @@ weekends: "6:00 AM - 11:00 AM",
     youtubeVideos: [
       {
         id: "kondapur-1",
-        title: "24/7 Access & Smart Tracking at Kondapur",
-        url: "https://youtu.be/UPfGgwF8ySk?si=wFQP9nH5lQ21Xqyi",
+        title: "Stallion Xtreme Fitness",
+        url: "https://youtu.be/55Hdc81F-9s?si=uF65IzpLYB9wNZH_",
       },
       {
         id: "kondapur-2",
-        title: "IT Professional Workout Programs",
-        url: "https://youtu.be/jNQXAC9IVRw",
+        title: "Stallion Events",
+        url: "https://youtu.be/-jPO-V0e5Cs?si=nEr6wzeaQftaU6jt",
       },
       {
         id: "kondapur-3",
-        title: "Tech-Enabled Fitness Experience",
-        url: "https://youtu.be/9bZkp7q19f0",
+        title: "Stallion Classic 2024 Highlights",
+        url: "https://youtu.be/1qMg2Pbdcjg?si=MtxgkWu5lyXiw5pv",
       },
     ],
     trainers: [
       {
-        name: "Arjun Krishna",
+        name: " ",
         specialization: "Corporate Wellness & Posture Correction",
         experience: "6 years",
-        image: "/images/trainers/arjun.jpg",
-        certifications: [
-          "Corporate Wellness Specialist",
-          "Posture Restoration",
-        ],
+        image: "/images/trainers/kondapur1.JPG",
+        
       },
       {
-        name: "Kavya Rao",
+        name: " ",
         specialization: "Stress Management & Yoga",
         experience: "5 years",
-        image: "/images/trainers/kavya.jpg",
-        certifications: ["Stress Management Coach", "Hatha Yoga Certified"],
+        image: "/images/trainers/kondapur2.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Stress Management & Yoga",
+        experience: "5 years",
+        image: "/images/trainers/kondapur3.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Stress Management & Yoga",
+        experience: "5 years",
+        image: "/images/trainers/kondapur4.JPG",
       },
     ],
     facilities: [
@@ -322,34 +340,50 @@ weekends: "6:00 AM - 11:00 AM",
     youtubeVideos: [
       {
         id: "subash-1",
-        title: "Personalized Training at Subash Nagar",
-        url: "https://youtu.be/UPfGgwF8ySk?si=wFQP9nH5lQ21Xqyi",
+        title: "Stallion Xtreme fitness Subash Nagar- Gym Tour",
+        url: "https://youtu.be/ZW5suNOVAg8?si=LXVf9uzLgLwnAix2",
       },
       {
         id: "subash-2",
-        title: "Small Group Classes Experience",
-        url: "https://youtu.be/jNQXAC9IVRw",
+        title: "Stallion Xtreme Fitness",
+        url: "https://youtu.be/-jPO-V0e5Cs?si=nEr6wzeaQftaU6jt",
       },
       {
         id: "subash-3",
-        title: "Nutrition Counseling Services",
-        url: "https://youtu.be/9bZkp7q19f0",
+        title: "Stallion Classic 2024 Highlights",
+        url: "https://youtu.be/1qMg2Pbdcjg?si=MtxgkWu5lyXiw5pv",
       },
     ],
     trainers: [
       {
-        name: "Deepak Sharma",
+        name: " ",
         specialization: "Personal Training & Body Transformation",
         experience: "7 years",
-        image: "/images/trainers/deepak.jpg",
-        certifications: ["NASM-CPT", "Body Transformation Specialist"],
+        image: "/images/trainers/pipline1.JPG",
       },
       {
-        name: "Sonia Gupta",
+        name: " ",
         specialization: "Nutrition & Wellness Coaching",
         experience: "4 years",
-        image: "/images/trainers/sonia.jpg",
-        certifications: ["Certified Nutritionist", "Wellness Coach"],
+        image: "/images/trainers/pipeline2.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Nutrition & Wellness Coaching",
+        experience: "4 years",
+        image: "/images/trainers/pipeline3.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Nutrition & Wellness Coaching",
+        experience: "4 years",
+        image: "/images/trainers/pipeline4.JPG",
+      },
+      {
+        name: " ",
+        specialization: "Nutrition & Wellness Coaching",
+        experience: "4 years",
+        image: "/images/trainers/pipeline5.JPG",
       },
     ],
     facilities: [
@@ -387,36 +421,36 @@ weekends: "6:00 AM - 11:00 AM",
       {
         id: "suchitra-2",
         title: "Olympic Lifting Platforms Tour",
-        url: "https://youtu.be/jNQXAC9IVRw",
+        url: "https://youtu.be/-jPO-V0e5Cs?si=nEr6wzeaQftaU6jt",
       },
       {
         id: "suchitra-3",
         title: "Combat Sports Zone Training",
-        url: "https://youtu.be/9bZkp7q19f0",
+        url: "https://youtu.be/1qMg2Pbdcjg?si=MtxgkWu5lyXiw5pv",
       },
     ],
     trainers: [
       {
-        name: "Kiran Reddy",
+        name: " ",
         specialization: "CrossFit & Olympic Lifting",
         experience: "8 years",
-        image: "/images/whychooseus/fifth.png",
-        certifications: ["CrossFit Level 3", "Olympic Weightlifting Coach"],
+        image: "/images/trainers/suchi1.JPG",
       },
       {
-        name: "Pooja Singh",
+        name: " ",
         specialization: "Combat Sports & Self Defense",
         experience: "6 years",
-        image: "/images/whychooseus/fifth.png",
-        certifications: ["Martial Arts Instructor", "Self Defense Specialist"],
+        image: "/images/trainers/suchi2.JPG",
       },
-      {
-        name: "Rohit Kumar",
-        specialization: "Athletic Performance & Conditioning",
-        experience: "5 years",
-        image: "/images/whychooseus/fifth.png",
-        certifications: ["Sports Performance Coach", "Conditioning Specialist"],
+        {
+        name: " ",
+        specialization: "Combat Sports & Self Defense",
+        experience: "6 years",
+        image: "/images/trainers/s4.png",
       },
+
+     
+     
     ],
     facilities: [
       "Sprawling CrossFit Arena",
@@ -651,57 +685,71 @@ export default function BranchLocation() {
       </section>
 
       {/* Trainers Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="font-['AkiraExpanded'] text-2xl font-bold uppercase text-center mb-8 text-black">
-            Our Expert Trainers
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {location.trainers.map(
-              (trainer: Trainer, index: Key | null | undefined) => (
-                <div
-                  key={index}
-                  className="bg-gray-50 rounded-lg overflow-hidden shadow-md"
-                >
-                  <div className="h-48 relative">
-                    <Image
-                      src={trainer.image}
-                      alt={trainer.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h4 className="text-xl font-bold mb-1 text-black">
-                      {trainer.name}
-                    </h4>
-                    <p className="text-[#e71b4b] font-medium mb-2">
-                      {trainer.specialization}
-                    </p>
-                    <p className="text-gray-600 mb-4">
-                      {trainer.experience} of experience
-                    </p>
+    {/* Enhanced Trainers Section with Dynamic Image Sizing */}
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 className="font-['AkiraExpanded'] text-3xl font-bold uppercase text-center mb-12 text-black">
+      Our Expert Trainers
+    </h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {location.trainers.map(
+        (trainer: Trainer, index: Key | null | undefined) => (
+          <div
+            key={index}
+            className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+          >
+            {/* Dynamic Image Container */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+              <Image
+                src={trainer.image}
+                alt={trainer.name}
+                width={400}
+                height={300}
+                className="w-full h-auto max-h-[500px] min-h-[250px] object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                style={{
+                  aspectRatio: 'auto'
+                }}
+              />
+              
+              {/* Image Overlay Effects */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Floating Badge */}
+              <div className="absolute top-4 right-4 bg-[#e71b4b] text-white px-3 py-1 rounded-full text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {trainer.experience}
+              </div>
+              
+              {/* Corner Accent */}
+              <div className="absolute top-0 left-0 w-0 h-0 border-l-[30px] border-l-[#e71b4b] border-t-[30px] border-t-[#e71b4b] border-r-[30px] border-r-transparent border-b-[30px] border-b-transparent opacity-80"></div>
+            </div>
 
-                    <div className="space-y-2">
-                      <h5 className="font-semibold text-black">
-                        Certifications:
-                      </h5>
-                      <ul className="space-y-1">
-                        {trainer.certifications.map((cert, i) => (
-                          <li key={i} className="flex items-center">
-                            <div className="w-1 h-1 bg-[#e71b4b] rounded-full mr-2"></div>
-                            <span className="text-gray-700">{cert}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )
-            )}
+            {/* Content Container - More Subdued */}
+            <div className="p-6 bg-gradient-to-br from-white to-gray-50">
+              {/* Name - Still prominent but smaller */}
+              <h4 className="text-lg font-bold mb-2 text-black group-hover:text-[#e71b4b] transition-colors duration-300">
+                {trainer.name}
+              </h4>
+              
+              {/* Specialization - More subtle */}
+              <p className="text-[#e71b4b] font-medium text-sm mb-3 opacity-80">
+                {trainer.specialization}
+              </p>
+              
+              {/* Experience - More muted */}
+              <div className="flex items-center text-gray-500 text-sm">
+                <div className="w-2 h-2 bg-[#e71b4b] rounded-full mr-2 opacity-60"></div>
+                <span className="font-medium">{trainer.experience} Experience</span>
+              </div>
+              
+              {/* Subtle Bottom Border Animation */}
+              <div className="mt-4 h-1 bg-gradient-to-r from-[#e71b4b] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            </div>
           </div>
-        </div>
-      </section>
+        )
+      )}
+    </div>
+  </div>
+</section>
 
       {/* FAQ Section */}
       <FaqSection />

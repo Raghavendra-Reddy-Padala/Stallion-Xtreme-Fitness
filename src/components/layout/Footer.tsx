@@ -62,7 +62,7 @@ export default function Footer() {
         <div className="text-center md:text-right">
           <h3 className="text-lg md:text-xl font-bold mb-4 text-white">Contact</h3>
           <address className="not-italic text-sm md:text-base">
-            <p className="mb-2 text-gray-300">Plot No. 119/120, Kukatpally Rd, above More Super Market, Prakasham Panthulu Nagar, Rodamestri Nagar, Hyderabad </p>
+            <p className="mb-2 text-gray-300">Plot No. 119/120, Kukatpally Rd,beside Ramky one marvel above More Super Market, Prakasham Panthulu Nagar, Rodamestri Nagar, Hyderabad </p>
             <p className="mb-2 text-gray-300">Telangana 500055</p>
             
             <p>
