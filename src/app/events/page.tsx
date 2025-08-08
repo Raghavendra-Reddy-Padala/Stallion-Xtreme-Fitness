@@ -11,7 +11,7 @@ function Events() {
   return (
     <div>
       <HeroSection />
-      <EventsSection />
+      {/* <EventsSection /> */}
       <Highlights/>
       <WhyJoinUs/>
       <FaqSection/>
