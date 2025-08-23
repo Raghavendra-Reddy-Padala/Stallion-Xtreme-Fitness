@@ -32,17 +32,7 @@ export default function Footer() {
         {/* TECHMOCHa & NAVYUG Credits - Center */}
         <div className="text-center">
           <div className="space-y-10">
-             <div>
-              <span className="text-gray-300 text-sm block mb-2">Backed up by</span>
-              <Link 
-                href="https://techmocha.in" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-[#e71b4b] to-[#ff6b6b] bg-clip-text hover:from-white hover:to-gray-200 transition-all duration-300 transform hover:scale-105 inline-block"
-              >
-                NAVYUG
-              </Link>
-            </div>
+             
             <div>
               <span className="text-gray-300 text-sm block mb-2">Developed by</span>
               <Link 

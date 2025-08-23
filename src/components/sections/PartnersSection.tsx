@@ -54,7 +54,6 @@ export default function PartnersSection() {
   }, []);
 
   const partners = [
-    { name: "Navayug", logo: "/svg/navayug.PNG" },
     { name: "LifeSpan", logo: "/svg/lifespan.PNG" },
     { name: "TechMocha", logo: "/svg/techmocha.png" },
     { name: "cnes", logo: "/svg/cnes.jpg" },
