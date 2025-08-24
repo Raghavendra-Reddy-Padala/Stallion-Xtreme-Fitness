@@ -92,7 +92,7 @@ const locationData: LocationData = {
       {
         name: "Bandari Venkatesh",
         specialization: "Powerlifting & Strength Training",
-        experience: "3 years",
+        experience: "4 years",
         image: "/images/trainers/chintal1.JPG",
       },
       {
@@ -104,7 +104,7 @@ const locationData: LocationData = {
       {
         name: "Srikar",
         specialization: "Bodybuilding & Nutrition",
-        experience: "5 years",
+        experience: "2 years",
         image: "/images/trainers/chintal3.JPG",
       },
     ],
@@ -155,7 +155,7 @@ const locationData: LocationData = {
       {
         name: "NITTA SAI SANTHOSH",
         specialization: "Fitness & Nutrition",
-        experience: "4 years",
+        experience: "6 years",
         image: "/images/trainers/bhel1.JPG",
       },
       {
@@ -225,38 +225,38 @@ weekends: "6:00 AM - 11:00 AM",
       {
         name: "Balu",
         specialization: "Cardio Training & Weight Loss",
-        experience: "6 years",
+        experience: "8 years",
         image: "/images/trainers/g2.JPG",
       },
       {
         name: "B.Ashok kumar",
         specialization: "Personal training & Weight Loss",
-        experience: "6 years",
+        experience: "9 years",
         image: "/images/trainers/g3.JPG",
       },
        {
         name: "Syed Imran",
         specialization: "Functional Training",
-        experience: "9 years",
+        experience: "7 years",
         image: "/images/trainers/g4.JPG",
       },
        {
         name: "Mohammad Asif Pasha",
         specialization: "Functional Training",
-        experience: "9 years",
+        experience: "2 years",
         image: "/images/trainers/g5.jpg",
       },
        {
         name: "T. Rahul",
         specialization: "Functional Training",
-        experience: "9 years",
+        experience: "2 years",
         image: "/images/trainers/g6.jpg",
       },
 
        {
         name: "Sandeep kundu",
         specialization: "Core Strength & Flexibility",
-        experience: "9 years",
+        experience: "7 years",
         image: "/images/trainers/g7.jpg",
       },
 
@@ -309,7 +309,7 @@ weekends: "6:00 AM - 11:00 AM",
       {
         name: " ",
         specialization: "Corporate Wellness & Posture Correction",
-        experience: "6 years",
+        experience: "2 years",
         image: "/images/trainers/kondapur1.JPG",
         
       },
@@ -322,7 +322,7 @@ weekends: "6:00 AM - 11:00 AM",
       {
         name: "Kareem",
         specialization: "Body Transformation & Nutrition",
-        experience: "5 years",
+        experience: "7 years",
         image: "/images/trainers/kondapur3.JPG",
       },
       {
@@ -334,7 +334,7 @@ weekends: "6:00 AM - 11:00 AM",
        {
         name: "Bandi Tarun",
         specialization: "Cardio Training & Weight Loss",
-        experience: "5 years",
+        experience: "3 years",
         image: "/images/trainers/kondapur5.JPG",
       },
        {
@@ -397,25 +397,25 @@ weekends: "6:00 AM - 11:00 AM",
       {
         name: "Mosin Khan",
         specialization: "Bodybuilding & Strength Training",
-        experience: "4 years",
+        experience: "7 years",
         image: "/images/trainers/pipeline2.JPG",
       },
       {
         name: " ",
         specialization: "Nutrition & Wellness Coaching",
-        experience: "4 years",
+        experience: "2 years",
         image: "/images/trainers/pipeline3.JPG",
       },
       {
         name: "Nirmal jakkamsetti",
         specialization: "Health & Fitness Coaching",
-        experience: "4 years",
+        experience: "5 years",
         image: "/images/trainers/pipeline4.JPG",
       },
       {
         name: "Ashish Samal",
         specialization: "powerlifting & Strength Training",
-        experience: "4 years",
+        experience: "6 years",
         image: "/images/trainers/pipeline5.JPG",
       },
       // {
@@ -472,26 +472,26 @@ weekends: "6:00 AM - 11:00 AM",
       {
         name: "K Vijay Goud",
         specialization: "CrossFit & Olympic Lifting",
-        experience: "8 years",
+        experience: "6 years",
         image: "/images/trainers/suchi1.JPG",
       },
       {
         name: "Aithan akash Yadav",
         specialization: "Combat Sports & Self Defense",
-        experience: "6 years",
+        experience: "4 years",
         image: "/images/trainers/suchi2.JPG",
       },
         {
         name: "Anurag singh",
         specialization: "Functional Training & Strength",
-        experience: "6 years",
+        experience: "4 years",
         image: "/images/trainers/s4.png",
       },
 
       {
         name: "Ayush singh",
         specialization: "Body building & Nutrition",
-        experience: "6 years",
+        experience: "2 years",
         image: "/images/trainers/suchi3.jpg",
       },
      
